@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --turbopack --use-npm --yes)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(supabase --version:*)",
+      "Bash(supabase init:*)",
+      "Bash(supabase link:*)",
+      "Bash(supabase db push:*)",
+      "Bash(supabase db reset:*)",
+      "Bash(supabase db seed:*)",
+      "Bash(supabase:*)",
+      "Bash(cat:*)",
+      "Bash(timeout 15 npm run dev:*)",
+      "Bash(for dir in src/features/*/)",
+      "Bash(do)",
+      "Bash(if [ -f \"$dirindex.ts\" ])",
+      "Bash(then)",
+      "Bash(echo:*)",
+      "Bash(else)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(ls:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nchore: プロジェクト基盤設定\n\n- Next.js 15 + React 19 + TypeScript 5 セットアップ\n- Tailwind CSS 4 設定\n- ESLint 9 設定\n- 環境変数テンプレート \\(.env.example\\)\n- Supabase, Stripe, Cloudinary, Resend, LINE API 対応\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
