@@ -28,7 +28,7 @@ export function VariantSelector({
 
   return (
     <div className="space-y-3">
-      <span className="text-sm font-medium text-neutral-700">サイズ</span>
+      <span className="text-sm font-bold uppercase tracking-wider text-foreground">サイズ</span>
       <div className="flex flex-wrap gap-2">
         {variants.map((variant) => (
           <button
@@ -37,12 +37,12 @@ export function VariantSelector({
             onClick={() => handleSelect(variant)}
             disabled={variant.stockQuantity === 0}
             className={cn(
-              'px-4 py-2 rounded-lg border text-sm font-medium transition-colors',
+              'px-4 py-2 border-2 text-sm font-bold uppercase tracking-wider transition-all',
               selectedVariant.id === variant.id
-                ? 'border-primary-500 bg-primary-50 text-primary-700'
-                : 'border-neutral-300 bg-white text-neutral-700 hover:border-primary-300',
+                ? 'border-foreground bg-primary-DEFAULT text-white shadow-[4px_4px_0px_var(--color-foreground)] -translate-y-1'
+                : 'border-foreground bg-white text-foreground hover:-translate-y-1 hover:shadow-[4px_4px_0px_var(--color-foreground)]',
               variant.stockQuantity === 0 &&
-                'opacity-50 cursor-not-allowed line-through'
+              'opacity-50 cursor-not-allowed line-through hover:translate-y-0 hover:shadow-none'
             )}
           >
             {variant.name}

@@ -26,22 +26,22 @@ export default async function GiftClaimPage({ params }: GiftClaimPageProps) {
   return (
     <div className="py-8">
       <Container className="max-w-2xl">
-        <div className="text-center mb-8">
-          <span className="text-5xl mb-4 block">🌸</span>
-          <h1 className="text-3xl font-bold">{t('gift_for_you')}</h1>
-          <p className="text-muted-foreground mt-2">
+        <div className="text-center mb-12 border-4 border-foreground shadow-[8px_8px_0px_var(--color-foreground)] p-12 bg-white">
+          <span className="text-6xl mb-6 block">🌸</span>
+          <h1 className="text-5xl font-serif font-bold uppercase tracking-tight">{t('gift_for_you')}</h1>
+          <p className="text-xl font-bold mt-4 text-foreground/70 tracking-wider">
             {t('from_sender', { name: egift.senderName })}
           </p>
         </div>
 
         {egift.status === 'expired' && (
-          <Card className="mb-6">
-            <CardContent className="text-center py-8">
-              <span className="text-5xl mb-4 block">⏰</span>
-              <h2 className="text-xl font-semibold text-muted-foreground">
+          <Card className="mb-6 border-4 border-foreground shadow-[8px_8px_0px_var(--color-foreground)] bg-neutral-100">
+            <CardContent className="text-center py-12">
+              <span className="text-6xl mb-6 block">⏰</span>
+              <h2 className="text-2xl font-serif font-bold text-foreground">
                 {t('gift_expired')}
               </h2>
-              <p className="text-sm text-muted-foreground mt-2">
+              <p className="text-lg font-bold text-foreground/70 mt-4">
                 {t('gift_expired_message')}
               </p>
             </CardContent>

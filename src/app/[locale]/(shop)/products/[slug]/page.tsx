@@ -63,7 +63,7 @@ export default async function ProductDetailPage({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* 画像セクション */}
           <div className="space-y-4">
-            <div className="relative aspect-square overflow-hidden rounded-xl bg-neutral-100">
+            <div className="relative aspect-square overflow-hidden border-2 border-foreground bg-[#F9EAE6] shadow-[8px_8px_0px_var(--color-foreground)]">
               {primaryImage ? (
                 <Image
                   src={primaryImage.url}
@@ -85,7 +85,7 @@ export default async function ProductDetailPage({
                 {product.images.map((image) => (
                   <div
                     key={image.id}
-                    className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-lg bg-neutral-100"
+                    className="relative h-20 w-20 flex-shrink-0 overflow-hidden border-2 border-foreground bg-[#F9EAE6] hover:-translate-y-1 transition-transform cursor-pointer"
                   >
                     <Image
                       src={image.url}
@@ -103,11 +103,11 @@ export default async function ProductDetailPage({
           {/* 商品情報セクション */}
           <div className="space-y-6">
             <div>
-              <h1 className="text-3xl font-bold text-neutral-900">
+              <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground tracking-tight">
                 {translation.name}
               </h1>
               {product.rating && (
-                <div className="mt-2 flex items-center gap-2 text-sm text-neutral-500">
+                <div className="mt-4 flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-foreground bg-[#F9EAE6] border-2 border-foreground w-fit px-3 py-1 shadow-[2px_2px_0px_var(--color-foreground)]">
                   <span className="text-yellow-500">★</span>
                   <span>{product.rating}</span>
                   <span>({product.reviewCount} レビュー)</span>
@@ -116,7 +116,7 @@ export default async function ProductDetailPage({
             </div>
 
             <div className="flex items-baseline gap-3">
-              <span className="text-3xl font-bold text-primary-600">
+              <span className="text-3xl font-bold text-foreground">
                 {formatCurrency(defaultVariant.price, currentLocale)}
               </span>
               {product.originalPrice &&
@@ -154,30 +154,30 @@ export default async function ProductDetailPage({
             </div>
 
             {/* 商品説明 */}
-            <div className="border-t border-neutral-200 pt-6">
-              <h2 className="text-lg font-semibold mb-3">{t('description')}</h2>
-              <p className="text-neutral-600 whitespace-pre-line">
+            <div className="border-t-2 border-foreground pt-6">
+              <h2 className="text-2xl font-serif font-bold mb-3">{t('description')}</h2>
+              <p className="text-foreground whitespace-pre-line leading-relaxed">
                 {translation.description}
               </p>
             </div>
 
             {/* 花言葉 */}
             {translation.flowerMeaning && (
-              <div className="border-t border-neutral-200 pt-6">
-                <h2 className="text-lg font-semibold mb-3">
+              <div className="border-t-2 border-foreground pt-6">
+                <h2 className="text-2xl font-serif font-bold mb-3">
                   {t('flower_meaning')}
                 </h2>
-                <p className="text-neutral-600">{translation.flowerMeaning}</p>
+                <p className="text-foreground leading-relaxed">{translation.flowerMeaning}</p>
               </div>
             )}
 
             {/* お手入れ方法 */}
             {translation.careGuide && (
-              <div className="border-t border-neutral-200 pt-6">
-                <h2 className="text-lg font-semibold mb-3">
+              <div className="border-t-2 border-foreground pt-6">
+                <h2 className="text-2xl font-serif font-bold mb-3">
                   {t('care_guide')}
                 </h2>
-                <p className="text-neutral-600">{translation.careGuide}</p>
+                <p className="text-foreground leading-relaxed">{translation.careGuide}</p>
               </div>
             )}
           </div>

@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect } from 'react';
-import { CheckCircle } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import { Container } from '@/components/layout/container';
 import { Button } from '@/components/ui/button';
@@ -19,14 +18,15 @@ export default function CheckoutSuccessPage() {
   return (
     <section className="py-12">
       <Container className="max-w-2xl">
-        <Card className="p-12 text-center">
-          <CheckCircle className="h-16 w-16 text-success mx-auto mb-6" />
-          <h1 className="text-3xl font-bold mb-4">
-            ご注文ありがとうございます
+        <Card className="p-12 text-center border-4 border-foreground shadow-[8px_8px_0px_var(--color-foreground)] bg-white">
+          <div className="inline-flex items-center justify-center p-4 bg-[#F9EAE6] border-2 border-foreground rounded-full mb-8">
+            <span className="text-6xl">🎉</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-foreground tracking-tight">
+            ご注文ありがとうございます！
           </h1>
-          <p className="text-neutral-600 mb-8">
-            ご注文の確認メールをお送りしました。
-            <br />
+          <p className="text-lg text-foreground font-medium mb-8 leading-relaxed">
+            ご注文の確認メールをお送りしました。<br />
             商品の発送準備ができ次第、発送通知メールをお送りいたします。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
