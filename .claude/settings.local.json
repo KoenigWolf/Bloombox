@@ -26,7 +26,9 @@
       "Bash(git remote add:*)",
       "Bash(git branch:*)",
       "Bash(git add:*)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nchore: プロジェクト基盤設定\n\n- Next.js 15 + React 19 + TypeScript 5 セットアップ\n- Tailwind CSS 4 設定\n- ESLint 9 設定\n- 環境変数テンプレート \\(.env.example\\)\n- Supabase, Stripe, Cloudinary, Resend, LINE API 対応\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nchore: プロジェクト基盤設定\n\n- Next.js 15 + React 19 + TypeScript 5 セットアップ\n- Tailwind CSS 4 設定\n- ESLint 9 設定\n- 環境変数テンプレート \\(.env.example\\)\n- Supabase, Stripe, Cloudinary, Resend, LINE API 対応\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: Supabaseデータベースセットアップ\n\nデータベーススキーマ:\n- 17テーブル構成 \\(customers, products, orders, etc.\\)\n- RLSポリシー設定 \\(行レベルセキュリティ\\)\n- ENUMタイプ定義 \\(customer_rank, order_status, etc.\\)\n- トリガー関数 \\(updated_at自動更新, ランク自動計算\\)\n\nシードデータ:\n- サンプル農家・フローリストデータ\n- 4つの商品と多言語翻訳 \\(ja, en, zh, vi\\)\n- 商品バリアント・画像データ\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)"
     ]
   }
 }
