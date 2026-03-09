@@ -2,54 +2,59 @@
 
 @theme {
   /* Colors - Bloombox Brand */
-  --color-primary-50: oklch(0.98 0.02 145);
-  --color-primary-100: oklch(0.95 0.05 145);
-  --color-primary-200: oklch(0.9 0.1 145);
-  --color-primary-300: oklch(0.8 0.15 145);
-  --color-primary-400: oklch(0.7 0.18 145);
-  --color-primary-500: oklch(0.6 0.2 145);
-  --color-primary-600: oklch(0.5 0.18 145);
-  --color-primary-700: oklch(0.4 0.15 145);
-  --color-primary-800: oklch(0.3 0.1 145);
-  --color-primary-900: oklch(0.2 0.05 145);
+  --color-primary-50: #fde8e4;
+  --color-primary-100: #facac0;
+  --color-primary-200: #f6ab9b;
+  --color-primary-300: #f28b77;
+  --color-primary-400: #ee6c53;
+  --color-primary-500: #EA5B3B;
+  /* Poppy Red */
+  --color-primary-600: #d14122;
+  --color-primary-700: #a7331b;
+  --color-primary-800: #7d2614;
+  --color-primary-900: #54190e;
 
-  /* Accent - Flower Pink */
-  --color-accent-50: oklch(0.98 0.02 350);
-  --color-accent-100: oklch(0.95 0.05 350);
-  --color-accent-200: oklch(0.9 0.1 350);
-  --color-accent-300: oklch(0.8 0.15 350);
-  --color-accent-400: oklch(0.7 0.18 350);
-  --color-accent-500: oklch(0.6 0.2 350);
-  --color-accent-600: oklch(0.5 0.18 350);
-  --color-accent-700: oklch(0.4 0.15 350);
-  --color-accent-800: oklch(0.3 0.1 350);
-  --color-accent-900: oklch(0.2 0.05 350);
+  /* Accent - Magenta/Pink (for limited packaging etc.) */
+  --color-accent-50: #fdf2f8;
+  --color-accent-100: #fce7f3;
+  --color-accent-200: #fbcfe8;
+  --color-accent-300: #f9a8d4;
+  --color-accent-400: #f472b6;
+  --color-accent-500: #ec4899;
+  --color-accent-600: #db2777;
+  --color-accent-700: #be185d;
+  --color-accent-800: #9d174d;
+  --color-accent-900: #831843;
 
   /* Neutral */
-  --color-neutral-50: oklch(0.98 0 0);
-  --color-neutral-100: oklch(0.96 0 0);
-  --color-neutral-200: oklch(0.9 0 0);
-  --color-neutral-300: oklch(0.8 0 0);
-  --color-neutral-400: oklch(0.6 0 0);
-  --color-neutral-500: oklch(0.5 0 0);
-  --color-neutral-600: oklch(0.4 0 0);
-  --color-neutral-700: oklch(0.3 0 0);
-  --color-neutral-800: oklch(0.2 0 0);
-  --color-neutral-900: oklch(0.1 0 0);
+  --color-neutral-50: #fbfaf9;
+  --color-neutral-100: #f5f3ef;
+  /* Warm off-white */
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #191717;
+  /* Ink dark charcoal */
 
   /* Semantic Colors */
-  --color-success: oklch(0.65 0.2 145);
-  --color-warning: oklch(0.75 0.15 80);
-  --color-error: oklch(0.6 0.2 25);
-  --color-info: oklch(0.65 0.15 230);
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
 
   /* Background */
-  --color-background: oklch(0.99 0.005 90);
-  --color-foreground: oklch(0.15 0 0);
+  --color-background: #F9EAE6;
+  /* Peach Beige */
+  --color-foreground: #191717;
+  /* Dark Charcoal */
 
   /* Fonts */
-  --font-sans: 'Noto Sans JP', 'Inter', system-ui, sans-serif;
-  --font-serif: 'Noto Serif JP', serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-playfair), serif;
 
   /* Radius */
   --radius-sm: 0.25rem;
@@ -59,22 +64,29 @@
   --radius-2xl: 1.5rem;
   --radius-full: 9999px;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  /* Shadows (Neo-Brutalism Solid Shadows) */
+  --shadow-sm: 2px 2px 0px 0px var(--color-foreground);
+  --shadow-md: 4px 4px 0px 0px var(--color-foreground);
+  --shadow-lg: 6px 6px 0px 0px var(--color-foreground);
+  --shadow-xl: 8px 8px 0px 0px var(--color-foreground);
+
+  /* Borders */
+  --border-width-DEFAULT: 2px;
+  --color-border: var(--color-foreground);
 
   /* Animation */
   --animate-fade-in: fade-in 0.3s ease-out;
   --animate-slide-up: slide-up 0.3s ease-out;
   --animate-scale-in: scale-in 0.2s ease-out;
+  --animate-marquee: marquee 25s linear infinite;
+  --animate-marquee-fast: marquee 15s linear infinite;
 }
 
 @keyframes fade-in {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -85,6 +97,7 @@
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -96,6 +109,7 @@
     opacity: 0;
     transform: scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -106,8 +120,19 @@
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
   }
 }
 
@@ -126,6 +151,18 @@ body {
   color: var(--color-foreground);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  /* Chunky block look */
 }
 
 /* Focus styles for accessibility */
