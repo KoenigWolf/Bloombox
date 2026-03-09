@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Container } from '@/components/layout/container';
 import { ProductList } from '@/features/products/components';
+import { SortSelect } from '@/features/products/components/sort-select';
 import type { ProductSortOption } from '@/features/products/types';
 
 interface ProductsPageProps {
@@ -47,47 +48,29 @@ export default async function ProductsPage({
   const sort = resolvedSearchParams.sort || 'newest';
 
   return (
-    <section className="py-12">
+    <section className="py-16 bg-background min-h-screen">
       <Container>
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold">{t('title')}</h1>
+        <div className="mb-12 border-b-4 border-foreground pb-6">
+          <h1 className="text-5xl md:text-7xl font-black font-serif uppercase tracking-tighter">{t('title')}</h1>
         </div>
 
         {/* フィルター・ソート UI（後で拡張） */}
-        <div className="mb-6 flex flex-wrap gap-4 items-center justify-between">
+        <div className="mb-10 flex flex-wrap gap-4 items-center justify-between bg-white border-2 border-foreground p-6 shadow-[6px_6px_0px_var(--color-foreground)] rounded-sm">
           <div className="flex gap-2">
             {/* カテゴリフィルターボタン（後で実装） */}
+            <span className="font-bold uppercase tracking-widest text-primary-500">Filters 🔍</span>
           </div>
-          <div className="flex gap-2 items-center">
-            <span className="text-sm text-neutral-500">{t('sort.title')}:</span>
+          <div className="flex gap-4 items-center">
+            <span className="text-sm font-bold uppercase tracking-widest text-neutral-900">{t('sort.title')}:</span>
             <SortSelect currentSort={sort} />
           </div>
         </div>
 
-        <ProductList filters={filters} sort={sort} />
+        <div className="mt-8">
+          <ProductList filters={filters} sort={sort} />
+        </div>
       </Container>
     </section>
   );
 }
 
-function SortSelect({ currentSort }: { currentSort: ProductSortOption }) {
-  // シンプルなソート選択（後でより良いUIに置き換え可能）
-  return (
-    <form>
-      <select
-        name="sort"
-        defaultValue={currentSort}
-        className="rounded-lg border border-neutral-300 px-3 py-2 text-sm focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20"
-        onChange={(e) => {
-          const form = e.target.form;
-          if (form) form.submit();
-        }}
-      >
-        <option value="newest">新着順</option>
-        <option value="price_asc">価格が安い順</option>
-        <option value="price_desc">価格が高い順</option>
-        <option value="popular">人気順</option>
-      </select>
-    </form>
-  );
-}
