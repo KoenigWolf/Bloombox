@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "title": "Bloombox - 花卉礼品电商",
+    "description": "Bloombox是一个可持续发展的花卉礼品平台，连接花卉生产者和消费者。"
+  },
+  "common": {
+    "add_to_cart": "加入购物车",
+    "buy_now": "立即购买",
+    "loading": "加载中...",
+    "error": "发生错误",
+    "retry": "重试",
+    "back": "返回",
+    "next": "下一步",
+    "submit": "提交",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "close": "关闭",
+    "search": "搜索",
+    "more": "查看更多",
+    "less": "收起",
+    "all": "全部",
+    "none": "无",
+    "yes": "是",
+    "no": "否"
+  },
+  "nav": {
+    "home": "首页",
+    "products": "商品列表",
+    "about": "关于我们",
+    "story": "花之故事",
+    "sustainability": "可持续发展",
+    "cart": "购物车",
+    "mypage": "我的页面",
+    "login": "登录",
+    "logout": "退出",
+    "signup": "注册"
+  },
+  "home": {
+    "hero": {
+      "title": "用花传递特别的心意",
+      "subtitle": "连接生产者的热情与您的心意的可持续花卉礼品",
+      "cta": "查看商品"
+    },
+    "features": {
+      "title": "Bloombox的特色",
+      "story": {
+        "title": "花之故事",
+        "description": "花卉生产者、花卉品种、配送旅程的三个故事，为每朵花带来价值。"
+      },
+      "miles": {
+        "title": "花之里程",
+        "description": "每次购物都能获得里程积分，可兑换特别奖励。"
+      },
+      "impact": {
+        "title": "花之影响",
+        "description": "您的购买为可持续花卉产业的发展做出贡献。"
+      }
+    }
+  },
+  "products": {
+    "title": "商品列表",
+    "no_products": "暂无商品",
+    "filter": {
+      "title": "筛选",
+      "category": "分类",
+      "price": "价格",
+      "occasion": "场合"
+    },
+    "sort": {
+      "title": "排序",
+      "newest": "最新",
+      "price_asc": "价格从低到高",
+      "price_desc": "价格从高到低",
+      "popular": "最受欢迎"
+    },
+    "detail": {
+      "add_to_cart": "加入购物车",
+      "buy_now": "立即购买",
+      "quantity": "数量",
+      "in_stock": "有库存",
+      "out_of_stock": "缺货",
+      "shipping": "运费",
+      "free_shipping": "免运费",
+      "description": "商品描述",
+      "flower_meaning": "花语",
+      "care_guide": "护理指南"
+    }
+  },
+  "cart": {
+    "title": "购物车",
+    "empty": "购物车是空的",
+    "empty_cta": "浏览商品",
+    "item": "{count}件商品",
+    "subtotal": "小计",
+    "shipping": "运费",
+    "total": "合计",
+    "checkout": "去结算",
+    "continue_shopping": "继续购物",
+    "remove": "删除",
+    "quantity": "数量"
+  },
+  "checkout": {
+    "title": "结算",
+    "shipping_address": "收货地址",
+    "billing_address": "账单地址",
+    "same_as_shipping": "与收货地址相同",
+    "payment": "支付方式",
+    "gift_options": {
+      "title": "礼品选项",
+      "message": "留言卡",
+      "message_placeholder": "请输入您的留言（可选）",
+      "wrapping": "礼品包装",
+      "noshi": "熨斗"
+    },
+    "order_summary": "订单摘要",
+    "place_order": "确认下单",
+    "terms": "下单即表示您同意我们的服务条款。"
+  },
+  "account": {
+    "mypage": {
+      "title": "我的页面",
+      "welcome": "您好，{name}",
+      "miles": "花之里程",
+      "rank": "等级",
+      "impact": "您的影响"
+    },
+    "orders": {
+      "title": "订单历史",
+      "no_orders": "暂无订单",
+      "order_number": "订单号",
+      "order_date": "订单日期",
+      "status": "状态",
+      "detail": "查看详情"
+    },
+    "settings": {
+      "title": "设置",
+      "profile": "个人资料",
+      "addresses": "地址",
+      "payment": "支付方式",
+      "notifications": "通知设置",
+      "language": "语言"
+    }
+  },
+  "auth": {
+    "sign_in_title": "登录",
+    "sign_up_title": "注册",
+    "email": "邮箱",
+    "password": "密码",
+    "name": "姓名",
+    "name_placeholder": "张三",
+    "password_requirements": "至少8个字符，包含字母和数字",
+    "forgot_password": "忘记密码？",
+    "sign_in": "登录",
+    "signing_in": "登录中...",
+    "sign_up": "注册",
+    "signing_up": "注册中...",
+    "sign_out": "退出",
+    "no_account": "没有账号？",
+    "has_account": "已有账号？"
+  },
+  "mypage": {
+    "title": "我的页面",
+    "profile": "个人资料",
+    "email": "邮箱",
+    "name": "姓名",
+    "not_set": "未设置",
+    "edit_profile": "编辑资料",
+    "flower_miles": "花之里程",
+    "miles": "里程",
+    "rank": "等级",
+    "order_history": "订单历史",
+    "view_orders": "查看订单",
+    "saved_addresses": "收货地址",
+    "manage_addresses": "管理地址",
+    "important_dates": "重要日期",
+    "manage_dates": "管理日期"
+  },
+  "flower_story": {
+    "title": "花的故事",
+    "subtitle": "这朵花到达您手中的故事",
+    "producer_story": "生产者的故事",
+    "time_story": "时间的故事",
+    "flower_meaning": "花语",
+    "harvested": "采摘",
+    "batch_code": "批次号",
+    "carbon_footprint": "碳足迹",
+    "rescue_flower": "救援花",
+    "rescue_reason": "原因",
+    "view_story": "查看故事"
+  },
+  "flower_miles": {
+    "your_miles": "您的花之里程",
+    "current_miles": "可用里程",
+    "lifetime_miles": "累计里程",
+    "miles_until_next_rank": "距离下一等级还需{miles}里程",
+    "rank_bronze": "青铜",
+    "rank_silver": "白银",
+    "rank_gold": "黄金",
+    "rank_platinum": "白金",
+    "history": "里程历史",
+    "no_transactions": "暂无记录",
+    "balance": "余额",
+    "redeem_miles": "兑换里程",
+    "miles_unit": "里程",
+    "redeem": "兑换",
+    "not_enough_miles": "里程不足"
+  },
+  "flower_impact": {
+    "your_impact": "您的贡献",
+    "flowers_purchased": "购买的花",
+    "flowers_rescued": "救援的花",
+    "carbon_saved": "减少的CO2",
+    "farmers_supported": "支持的农户",
+    "total_orders": "您已下单{count}次"
+  },
+  "egift": {
+    "gift_for_you": "送给您的礼物",
+    "from_sender": "来自 {name}",
+    "claim_title": "输入收货地址",
+    "your_name": "您的姓名",
+    "your_name_placeholder": "张三",
+    "shipping_address": "收货地址",
+    "shipping_name": "收件人姓名",
+    "postal_code": "邮政编码",
+    "prefecture": "都道府县",
+    "select_prefecture": "请选择...",
+    "city": "市区町村",
+    "address_line1": "详细地址",
+    "address_line2": "公寓、房间号等",
+    "address_line2_placeholder": "101室",
+    "phone": "电话号码",
+    "claim_gift": "领取礼物",
+    "claiming": "处理中...",
+    "claim_success_title": "领取成功！",
+    "claim_success_message": "您的礼物即将送达，请耐心等待。",
+    "gift_expired": "该礼物已过期",
+    "gift_expired_message": "请联系发送者获取帮助。",
+    "status_pending": "待领取",
+    "status_claimed": "已领取",
+    "status_shipped": "已发货",
+    "status_delivered": "已送达",
+    "status_expired": "已过期",
+    "claimed_at": "于{date}领取",
+    "meta_title": "来自{sender}的礼物",
+    "meta_description": "Bloombox特别花卉礼物"
+  },
+  "footer": {
+    "about": "关于Bloombox",
+    "help": "帮助",
+    "terms": "服务条款",
+    "privacy": "隐私政策",
+    "contact": "联系我们",
+    "copyright": "© {year} Bloombox. 保留所有权利。"
+  },
+  "error": {
+    "404": {
+      "title": "页面未找到",
+      "description": "您要找的页面不存在或已被移动。",
+      "back_home": "返回首页"
+    },
+    "500": {
+      "title": "服务器错误",
+      "description": "抱歉，服务器发生错误。",
+      "retry": "重试"
+    }
+  }
+}

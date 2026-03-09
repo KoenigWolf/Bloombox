@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "title": "Bloombox - Flower Gift EC",
+    "description": "Bloombox is a sustainable flower gift platform that connects flower producers with consumers."
+  },
+  "common": {
+    "add_to_cart": "Add to Cart",
+    "buy_now": "Buy Now",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "search": "Search",
+    "more": "Show More",
+    "less": "Show Less",
+    "all": "All",
+    "none": "None",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "story": "Flower Story",
+    "sustainability": "Sustainability",
+    "cart": "Cart",
+    "mypage": "My Page",
+    "login": "Login",
+    "logout": "Logout",
+    "signup": "Sign Up"
+  },
+  "home": {
+    "hero": {
+      "title": "Deliver Special Feelings with Flowers",
+      "subtitle": "Sustainable flower gifts that connect producers' passion with your heartfelt message",
+      "cta": "View Products"
+    },
+    "features": {
+      "title": "Features of Bloombox",
+      "story": {
+        "title": "Flower Story",
+        "description": "Three stories about flower producers, varieties, and delivery journey bring value to every flower."
+      },
+      "miles": {
+        "title": "Flower Miles",
+        "description": "Earn miles with every purchase and redeem them for special rewards."
+      },
+      "impact": {
+        "title": "Flower Impact",
+        "description": "Your purchase contributes to the development of sustainable flower industry."
+      }
+    }
+  },
+  "products": {
+    "title": "Products",
+    "no_products": "No products found",
+    "filter": {
+      "title": "Filter",
+      "category": "Category",
+      "price": "Price",
+      "occasion": "Occasion"
+    },
+    "sort": {
+      "title": "Sort",
+      "newest": "Newest",
+      "price_asc": "Price: Low to High",
+      "price_desc": "Price: High to Low",
+      "popular": "Most Popular"
+    },
+    "detail": {
+      "add_to_cart": "Add to Cart",
+      "buy_now": "Buy Now",
+      "quantity": "Quantity",
+      "in_stock": "In Stock",
+      "out_of_stock": "Out of Stock",
+      "shipping": "Shipping",
+      "free_shipping": "Free Shipping",
+      "description": "Description",
+      "flower_meaning": "Flower Meaning",
+      "care_guide": "Care Guide"
+    }
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "empty_cta": "Browse Products",
+    "item": "{count} item(s)",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total",
+    "checkout": "Proceed to Checkout",
+    "continue_shopping": "Continue Shopping",
+    "remove": "Remove",
+    "quantity": "Quantity"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "shipping_address": "Shipping Address",
+    "billing_address": "Billing Address",
+    "same_as_shipping": "Same as shipping address",
+    "payment": "Payment Method",
+    "gift_options": {
+      "title": "Gift Options",
+      "message": "Message Card",
+      "message_placeholder": "Enter your message (optional)",
+      "wrapping": "Gift Wrapping",
+      "noshi": "Noshi"
+    },
+    "order_summary": "Order Summary",
+    "place_order": "Place Order",
+    "terms": "By placing your order, you agree to our Terms of Service."
+  },
+  "account": {
+    "mypage": {
+      "title": "My Page",
+      "welcome": "Hello, {name}",
+      "miles": "Flower Miles",
+      "rank": "Rank",
+      "impact": "Your Impact"
+    },
+    "orders": {
+      "title": "Order History",
+      "no_orders": "No orders yet",
+      "order_number": "Order Number",
+      "order_date": "Order Date",
+      "status": "Status",
+      "detail": "View Details"
+    },
+    "settings": {
+      "title": "Settings",
+      "profile": "Profile",
+      "addresses": "Addresses",
+      "payment": "Payment Methods",
+      "notifications": "Notifications",
+      "language": "Language"
+    }
+  },
+  "auth": {
+    "sign_in_title": "Login",
+    "sign_up_title": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "name_placeholder": "John Doe",
+    "password_requirements": "At least 8 characters with letters and numbers",
+    "forgot_password": "Forgot password?",
+    "sign_in": "Login",
+    "signing_in": "Logging in...",
+    "sign_up": "Sign Up",
+    "signing_up": "Signing up...",
+    "sign_out": "Logout",
+    "no_account": "Don't have an account?",
+    "has_account": "Already have an account?"
+  },
+  "mypage": {
+    "title": "My Page",
+    "profile": "Profile",
+    "email": "Email",
+    "name": "Name",
+    "not_set": "Not set",
+    "edit_profile": "Edit Profile",
+    "flower_miles": "Flower Miles",
+    "miles": "miles",
+    "rank": "Rank",
+    "order_history": "Order History",
+    "view_orders": "View Orders",
+    "saved_addresses": "Saved Addresses",
+    "manage_addresses": "Manage Addresses",
+    "important_dates": "Important Dates",
+    "manage_dates": "Manage Dates"
+  },
+  "flower_story": {
+    "title": "Flower Story",
+    "subtitle": "The story of how this flower reached you",
+    "producer_story": "Producer's Story",
+    "time_story": "Time Story",
+    "flower_meaning": "Flower Meaning",
+    "harvested": "Harvested",
+    "batch_code": "Batch Code",
+    "carbon_footprint": "Carbon Footprint",
+    "rescue_flower": "Rescue Flower",
+    "rescue_reason": "Reason",
+    "view_story": "View Story"
+  },
+  "flower_miles": {
+    "your_miles": "Your Flower Miles",
+    "current_miles": "Available Miles",
+    "lifetime_miles": "Lifetime Miles",
+    "miles_until_next_rank": "{miles} miles until next rank",
+    "rank_bronze": "Bronze",
+    "rank_silver": "Silver",
+    "rank_gold": "Gold",
+    "rank_platinum": "Platinum",
+    "history": "Miles History",
+    "no_transactions": "No transactions yet",
+    "balance": "Balance",
+    "redeem_miles": "Redeem Miles",
+    "miles_unit": "miles",
+    "redeem": "Redeem",
+    "not_enough_miles": "Not enough miles"
+  },
+  "flower_impact": {
+    "your_impact": "Your Impact",
+    "flowers_purchased": "Flowers Purchased",
+    "flowers_rescued": "Flowers Rescued",
+    "carbon_saved": "CO2 Saved",
+    "farmers_supported": "Farmers Supported",
+    "total_orders": "You have placed {count} orders with us"
+  },
+  "egift": {
+    "gift_for_you": "A Gift for You",
+    "from_sender": "From {name}",
+    "claim_title": "Enter Your Delivery Address",
+    "your_name": "Your Name",
+    "your_name_placeholder": "Jane Doe",
+    "shipping_address": "Shipping Address",
+    "shipping_name": "Recipient Name",
+    "postal_code": "Postal Code",
+    "prefecture": "Prefecture",
+    "select_prefecture": "Select...",
+    "city": "City",
+    "address_line1": "Street Address",
+    "address_line2": "Apartment, Suite, etc.",
+    "address_line2_placeholder": "Apt 101",
+    "phone": "Phone Number",
+    "claim_gift": "Claim Gift",
+    "claiming": "Processing...",
+    "claim_success_title": "Gift Claimed!",
+    "claim_success_message": "Your gift will be delivered soon. Stay tuned!",
+    "gift_expired": "This gift has expired",
+    "gift_expired_message": "Please contact the sender for assistance.",
+    "status_pending": "Pending",
+    "status_claimed": "Claimed",
+    "status_shipped": "Shipped",
+    "status_delivered": "Delivered",
+    "status_expired": "Expired",
+    "claimed_at": "Claimed on {date}",
+    "meta_title": "Gift from {sender}",
+    "meta_description": "A special flower gift from Bloombox"
+  },
+  "footer": {
+    "about": "About Bloombox",
+    "help": "Help",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "copyright": "© {year} Bloombox. All rights reserved."
+  },
+  "error": {
+    "404": {
+      "title": "Page Not Found",
+      "description": "The page you're looking for doesn't exist or has been moved.",
+      "back_home": "Back to Home"
+    },
+    "500": {
+      "title": "Server Error",
+      "description": "We're sorry. A server error has occurred.",
+      "retry": "Retry"
+    }
+  }
+}

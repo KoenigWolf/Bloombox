@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "title": "Bloombox - 花のギフトEC",
+    "description": "Bloomboxは、花の生産者と消費者をつなぐサステナブルな花のギフトプラットフォームです。"
+  },
+  "common": {
+    "add_to_cart": "カートに追加",
+    "buy_now": "今すぐ購入",
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "retry": "再試行",
+    "back": "戻る",
+    "next": "次へ",
+    "submit": "送信",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "close": "閉じる",
+    "search": "検索",
+    "more": "もっと見る",
+    "less": "閉じる",
+    "all": "すべて",
+    "none": "なし",
+    "yes": "はい",
+    "no": "いいえ"
+  },
+  "nav": {
+    "home": "ホーム",
+    "products": "商品一覧",
+    "about": "私たちについて",
+    "story": "Flower Story",
+    "sustainability": "サステナビリティ",
+    "cart": "カート",
+    "mypage": "マイページ",
+    "login": "ログイン",
+    "logout": "ログアウト",
+    "signup": "新規登録"
+  },
+  "home": {
+    "hero": {
+      "title": "花で届ける、特別な想い",
+      "subtitle": "生産者の想いと、あなたの想いをつなぐ、サステナブルな花のギフト",
+      "cta": "商品を見る"
+    },
+    "features": {
+      "title": "Bloomboxの特徴",
+      "story": {
+        "title": "Flower Story",
+        "description": "花の生産者、花の品種、花が届くまでの時間。3つのストーリーで花の価値をお届けします。"
+      },
+      "miles": {
+        "title": "Flower Miles",
+        "description": "お買い物でマイルが貯まり、特典と交換できます。"
+      },
+      "impact": {
+        "title": "Flower Impact",
+        "description": "あなたの購入が、サステナブルな花産業の発展に貢献します。"
+      }
+    }
+  },
+  "products": {
+    "title": "商品一覧",
+    "no_products": "商品がありません",
+    "filter": {
+      "title": "絞り込み",
+      "category": "カテゴリ",
+      "price": "価格",
+      "occasion": "シーン"
+    },
+    "sort": {
+      "title": "並び替え",
+      "newest": "新着順",
+      "price_asc": "価格が安い順",
+      "price_desc": "価格が高い順",
+      "popular": "人気順"
+    },
+    "detail": {
+      "add_to_cart": "カートに追加",
+      "buy_now": "今すぐ購入",
+      "quantity": "数量",
+      "in_stock": "在庫あり",
+      "out_of_stock": "在庫切れ",
+      "shipping": "送料",
+      "free_shipping": "送料無料",
+      "description": "商品説明",
+      "flower_meaning": "花言葉",
+      "care_guide": "お手入れ方法"
+    }
+  },
+  "cart": {
+    "title": "ショッピングカート",
+    "empty": "カートは空です",
+    "empty_cta": "商品を探す",
+    "item": "{count}点",
+    "subtotal": "小計",
+    "shipping": "送料",
+    "total": "合計",
+    "checkout": "レジに進む",
+    "continue_shopping": "買い物を続ける",
+    "remove": "削除",
+    "quantity": "数量"
+  },
+  "checkout": {
+    "title": "ご注文手続き",
+    "shipping_address": "お届け先",
+    "billing_address": "請求先",
+    "same_as_shipping": "お届け先と同じ",
+    "payment": "お支払い方法",
+    "gift_options": {
+      "title": "ギフトオプション",
+      "message": "メッセージカード",
+      "message_placeholder": "メッセージを入力してください（任意）",
+      "wrapping": "ラッピング",
+      "noshi": "のし"
+    },
+    "order_summary": "ご注文内容",
+    "place_order": "注文を確定する",
+    "terms": "注文を確定することで、利用規約に同意したものとみなされます。"
+  },
+  "account": {
+    "mypage": {
+      "title": "マイページ",
+      "welcome": "{name}さん、こんにちは",
+      "miles": "Flower Miles",
+      "rank": "ランク",
+      "impact": "あなたのインパクト"
+    },
+    "orders": {
+      "title": "注文履歴",
+      "no_orders": "注文履歴がありません",
+      "order_number": "注文番号",
+      "order_date": "注文日",
+      "status": "ステータス",
+      "detail": "詳細を見る"
+    },
+    "settings": {
+      "title": "設定",
+      "profile": "プロフィール",
+      "addresses": "お届け先",
+      "payment": "お支払い方法",
+      "notifications": "通知設定",
+      "language": "言語"
+    }
+  },
+  "auth": {
+    "sign_in_title": "ログイン",
+    "sign_up_title": "新規登録",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "name": "お名前",
+    "name_placeholder": "山田 太郎",
+    "password_requirements": "8文字以上、英字と数字を含む",
+    "forgot_password": "パスワードをお忘れの方",
+    "sign_in": "ログイン",
+    "signing_in": "ログイン中...",
+    "sign_up": "登録する",
+    "signing_up": "登録中...",
+    "sign_out": "ログアウト",
+    "no_account": "アカウントをお持ちでない方",
+    "has_account": "すでにアカウントをお持ちの方"
+  },
+  "mypage": {
+    "title": "マイページ",
+    "profile": "プロフィール",
+    "email": "メールアドレス",
+    "name": "お名前",
+    "not_set": "未設定",
+    "edit_profile": "プロフィールを編集",
+    "flower_miles": "Flower Miles",
+    "miles": "マイル",
+    "rank": "ランク",
+    "order_history": "注文履歴",
+    "view_orders": "注文を見る",
+    "saved_addresses": "お届け先",
+    "manage_addresses": "お届け先を管理",
+    "important_dates": "大切な日",
+    "manage_dates": "大切な日を管理"
+  },
+  "flower_story": {
+    "title": "Flower Story",
+    "subtitle": "この花が届くまでの物語",
+    "producer_story": "生産者の物語",
+    "time_story": "時間の物語",
+    "flower_meaning": "花言葉",
+    "harvested": "収穫",
+    "batch_code": "バッチコード",
+    "carbon_footprint": "カーボンフットプリント",
+    "rescue_flower": "レスキューフラワー",
+    "rescue_reason": "理由",
+    "view_story": "ストーリーを見る"
+  },
+  "flower_miles": {
+    "your_miles": "あなたのFlower Miles",
+    "current_miles": "利用可能マイル",
+    "lifetime_miles": "累計獲得マイル",
+    "miles_until_next_rank": "次のランクまであと{miles}マイル",
+    "rank_bronze": "ブロンズ",
+    "rank_silver": "シルバー",
+    "rank_gold": "ゴールド",
+    "rank_platinum": "プラチナ",
+    "history": "マイル履歴",
+    "no_transactions": "履歴がありません",
+    "balance": "残高",
+    "redeem_miles": "マイルを使う",
+    "miles_unit": "マイル",
+    "redeem": "交換する",
+    "not_enough_miles": "マイル不足"
+  },
+  "flower_impact": {
+    "your_impact": "あなたのインパクト",
+    "flowers_purchased": "購入した花",
+    "flowers_rescued": "救った花",
+    "carbon_saved": "削減したCO2",
+    "farmers_supported": "支援した農家",
+    "total_orders": "これまでに{count}回のご注文をいただきました"
+  },
+  "egift": {
+    "gift_for_you": "あなたへの贈り物",
+    "from_sender": "{name}さんより",
+    "claim_title": "お届け先を入力",
+    "your_name": "あなたのお名前",
+    "your_name_placeholder": "山田 花子",
+    "shipping_address": "お届け先住所",
+    "shipping_name": "宛名",
+    "postal_code": "郵便番号",
+    "prefecture": "都道府県",
+    "select_prefecture": "選択してください",
+    "city": "市区町村",
+    "address_line1": "番地",
+    "address_line2": "建物名・部屋番号",
+    "address_line2_placeholder": "マンション名 101号室",
+    "phone": "電話番号",
+    "claim_gift": "ギフトを受け取る",
+    "claiming": "受け取り処理中...",
+    "claim_success_title": "受け取り完了！",
+    "claim_success_message": "まもなくお届けします。楽しみにお待ちください。",
+    "gift_expired": "このギフトは有効期限切れです",
+    "gift_expired_message": "恐れ入りますが、送り主にご連絡ください。",
+    "status_pending": "受け取り待ち",
+    "status_claimed": "受け取り済み",
+    "status_shipped": "発送済み",
+    "status_delivered": "配達完了",
+    "status_expired": "期限切れ",
+    "claimed_at": "{date}に受け取り",
+    "meta_title": "{sender}さんからのギフト",
+    "meta_description": "Bloomboxからお届けする特別なフラワーギフト"
+  },
+  "footer": {
+    "about": "Bloomboxについて",
+    "help": "ヘルプ",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "contact": "お問い合わせ",
+    "copyright": "© {year} Bloombox. All rights reserved."
+  },
+  "error": {
+    "404": {
+      "title": "ページが見つかりません",
+      "description": "お探しのページは存在しないか、移動した可能性があります。",
+      "back_home": "ホームに戻る"
+    },
+    "500": {
+      "title": "サーバーエラー",
+      "description": "申し訳ございません。サーバーでエラーが発生しました。",
+      "retry": "再試行"
+    }
+  }
+}
