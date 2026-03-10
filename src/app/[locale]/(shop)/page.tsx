@@ -16,21 +16,21 @@ export default async function HomePage({ params }: HomePageProps) {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-background border-b-2 border-foreground py-20 md:py-32 overflow-hidden">
+      <section className="relative bg-background border-b border-border py-20 md:py-32 overflow-hidden">
         <Container>
           <div className="max-w-4xl mx-auto text-center relative z-10 flex flex-col items-center">
-            <h1 className="text-6xl md:text-[5.5rem] font-black font-serif text-foreground mb-8 tracking-tighter leading-[1] uppercase selection:bg-primary-300">
-              {t('hero.title')} <span className="inline-block hover:animate-bounce transition-transform cursor-default">💐</span>
+            <h1 className="text-5xl md:text-7xl font-serif text-foreground mb-8 tracking-tight leading-[1.1] selection:bg-primary-200">
+              {t('hero.title')}
             </h1>
 
-            <div className="border-2 border-foreground bg-white p-4 shadow-[4px_4px_0px_var(--color-foreground)] -rotate-2 mb-10 w-fit">
-              <p className="text-lg md:text-xl text-neutral-900 font-bold uppercase tracking-widest leading-relaxed">
+            <div className="bg-white/50 backdrop-blur-sm px-6 py-3 rounded-full border border-border/50 mb-10 w-fit shadow-sm">
+              <p className="text-lg md:text-xl text-foreground font-medium tracking-wide">
                 {t('hero.subtitle')}
               </p>
             </div>
 
-            <Button asChild size="lg" className="text-lg h-14 px-10 shadow-[4px_4px_0px_var(--color-foreground)] rotate-1 hover:rotate-0 hover:-translate-y-1">
-              <Link href="/products">{t('hero.cta')} 📦</Link>
+            <Button asChild size="lg" className="text-lg h-14 px-10 rounded-full shadow-md hover:shadow-lg transition-all duration-300">
+              <Link href="/products">{t('hero.cta')}</Link>
             </Button>
           </div>
         </Container>
@@ -40,13 +40,13 @@ export default async function HomePage({ params }: HomePageProps) {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-primary-50 border-b-2 border-foreground">
+      <section className="py-24 bg-white border-b border-border">
         <Container>
-          <div className="flex flex-col md:flex-row items-end justify-between mb-16 border-b-4 border-foreground pb-6">
-            <h2 className="text-5xl md:text-7xl font-black font-serif uppercase tracking-tighter">
+          <div className="flex flex-col md:flex-row items-end justify-between mb-16 border-b border-border pb-6">
+            <h2 className="text-4xl md:text-5xl font-serif tracking-tight text-foreground">
               {t('features.title')}
             </h2>
-            <p className="font-bold uppercase tracking-widest text-primary-600 mt-4 md:mt-0 text-lg hidden md:block">
+            <p className="font-medium tracking-wide text-primary-600 mt-4 md:mt-0 text-lg hidden md:block">
               Not just another flower shop.
             </p>
           </div>
@@ -80,20 +80,19 @@ function FeatureCard({
   title,
   description,
   icon,
-  rotation,
 }: {
   title: string;
   description: string;
   icon: string;
-  rotation: string;
+  rotation?: string;
 }) {
   return (
-    <div className={`bg-white border-2 border-foreground p-8 sm:p-10 shadow-[8px_8px_0px_var(--color-foreground)] hover:shadow-[12px_12px_0px_var(--color-foreground)] hover:-translate-y-2 transition-all flex flex-col h-full rounded-sm ${rotation}`}>
-      <div className="text-5xl mb-8 bg-accent-100 w-20 h-20 flex items-center justify-center border-2 border-foreground rounded-full shadow-[2px_2px_0px_var(--color-foreground)] -rotate-12">
+    <div className={`bg-neutral-50/50 border border-border p-8 sm:p-10 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col h-full rounded-2xl`}>
+      <div className="text-4xl mb-8 bg-white w-16 h-16 flex items-center justify-center border border-border rounded-full shadow-sm text-primary-600">
         {icon}
       </div>
-      <h3 className="text-3xl font-black font-serif mb-4 uppercase tracking-tight">{title}</h3>
-      <p className="text-neutral-900 font-medium leading-relaxed text-lg">{description}</p>
+      <h3 className="text-2xl font-serif mb-4 tracking-tight text-foreground">{title}</h3>
+      <p className="text-neutral-600 leading-relaxed">{description}</p>
     </div>
   );
 }

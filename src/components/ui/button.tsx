@@ -4,18 +4,18 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils/cn';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-bold uppercase tracking-[0.05em] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-2 border-foreground active:translate-y-0.5 active:shadow-none hover:-translate-y-1 hover:shadow-[4px_4px_0px_var(--color-foreground)]',
+  'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98] hover:-translate-y-0.5 hover:shadow-md',
   {
     variants: {
       variant: {
         default:
-          'bg-primary-500 text-white hover:bg-primary-600',
+          'bg-primary-600 text-white hover:bg-primary-700 shadow-sm',
         secondary:
-          'bg-neutral-100 text-neutral-900 hover:bg-neutral-200',
+          'bg-neutral-100 text-neutral-900 border border-neutral-200 hover:bg-neutral-200',
         outline:
-          'bg-transparent hover:bg-primary-50 hover:text-primary-600',
-        ghost: 'border-transparent hover:bg-neutral-100 hover:border-foreground',
-        link: 'border-transparent text-primary-500 underline-offset-4 hover:underline hover:shadow-none hover:-translate-y-0 active:translate-y-0',
+          'bg-transparent border border-neutral-300 hover:border-primary-600 hover:text-primary-600',
+        ghost: 'border-transparent hover:bg-neutral-100 hover:border-transparent hover:shadow-none hover:-translate-y-0',
+        link: 'border-transparent text-primary-600 underline-offset-4 hover:underline hover:shadow-none hover:-translate-y-0 active:scale-100',
         destructive:
           'bg-error text-white hover:bg-red-600',
       },

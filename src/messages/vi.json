@@ -177,6 +177,32 @@
     "important_dates": "Ngày quan trọng",
     "manage_dates": "Quản lý ngày"
   },
+  "about": {
+    "title": "Kết nối cuộc sống của hoa, truyền tải cảm xúc",
+    "subtitle": "Những bông hoa được bạn cứu",
+    "mission": {
+      "title": "Sứ mệnh",
+      "heading": "Trao vai trò 'cảm ơn' cho những bông hoa lẽ ra bị vứt bỏ.",
+      "text1": "Tại Nhật Bản, khoảng 1 tỷ bông hoa tươi bị vứt bỏ mỗi năm khi vẫn còn đẹp. Không đạt tiêu chuẩn, mất cân đối cung cầu, kết thúc sự kiện. Lý do khác nhau, nhưng vẻ đẹp của bông hoa không có vấn đề gì.",
+      "text2": "Bloombox giải quyết vấn đề 'lãng phí hoa' này. Chúng tôi mua hoa lẽ ra bị vứt bỏ với giá hợp lý và nhờ các nhà thiết kế chuyên nghiệp biến chúng thành quà tặng tinh tế. Vừa giải quyết vấn đề xã hội, vừa mang đến trải nghiệm quà tặng cao cấp nhất."
+    },
+    "founder": {
+      "title": "Câu chuyện của Người sáng lập",
+      "heading": "Cứu hoa, đưa niềm vui tặng quà vào cuộc sống hàng ngày.",
+      "text1": "Người sáng lập Hiro sinh ra trong một gia đình kinh doanh bán buôn hoa qua nhiều thế hệ ở tỉnh Toyama (nơi sản xuất hoa tulip lớn nhất Nhật Bản). Từ nhỏ, anh đã chứng kiến vô số bông hoa nở đẹp nhưng không thể ra thị trường và bị vứt bỏ.",
+      "text2": "Trong sáu năm ở Hà Lan, anh đã chứng kiến 'văn hóa tặng hoa hàng ngày'. Mọi người mua hoa không chỉ vào những dịp đặc biệt, mà còn để bày tỏ lòng biết ơn và khích lệ. Trải nghiệm này đã kết nối nền sản xuất phong phú của Nhật Bản với vấn đề lãng phí và 'rào cản tặng hoa.'",
+      "text3": "Không phải 'mua hoa' mà là 'cứu hoa.' Và 'tặng cho người đặc biệt.' Bloombox đề xuất cách yêu hoa mới này."
+    },
+    "promise": {
+      "title": "Lời hứa của chúng tôi",
+      "heading": "Bền vững và vẻ đẹp không thỏa hiệp.",
+      "items": {
+        "1": "Mỗi bông hoa đi kèm câu chuyện về nông dân và cách nó được cứu khỏi việc vứt bỏ.",
+        "2": "UX trung tính đơn giản, tinh tế mà ngay cả nam giới cũng có thể chọn mà không do dự.",
+        "3": "Sau khi thưởng thức như hoa tươi, có thể biến thành hoa khô. Chúng tôi đề xuất cách tận hưởng sự trôi qua của thời gian."
+      }
+    }
+  },
   "flower_story": {
     "title": "Câu chuyện Hoa",
     "subtitle": "Câu chuyện về hành trình của bông hoa này đến tay bạn",

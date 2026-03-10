@@ -30,7 +30,9 @@
       "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: Supabaseデータベースセットアップ\n\nデータベーススキーマ:\n- 17テーブル構成 \\(customers, products, orders, etc.\\)\n- RLSポリシー設定 \\(行レベルセキュリティ\\)\n- ENUMタイプ定義 \\(customer_rank, order_status, etc.\\)\n- トリガー関数 \\(updated_at自動更新, ランク自動計算\\)\n\nシードデータ:\n- サンプル農家・フローリストデータ\n- 4つの商品と多言語翻訳 \\(ja, en, zh, vi\\)\n- 商品バリアント・画像データ\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(gh pr list:*)"
+      "Bash(gh pr list:*)",
+      "Bash(npm run test:run:*)",
+      "Bash(npm run check-all:*)"
     ]
   }
 }

@@ -177,6 +177,32 @@
     "important_dates": "Important Dates",
     "manage_dates": "Manage Dates"
   },
+  "about": {
+    "title": "Connecting Flower Life, Delivering Feelings",
+    "subtitle": "Flowers saved by you",
+    "mission": {
+      "title": "The Mission",
+      "heading": "Giving flowers destined for disposal a role of gratitude.",
+      "text1": "In Japan, approximately 1 billion fresh flowers are discarded each year while still beautiful. Non-standard sizes, supply-demand mismatches, end of events. The reasons vary, but there's nothing wrong with the beauty of the flowers themselves.",
+      "text2": "Bloombox addresses this 'flower loss' problem. We purchase flowers destined for disposal at fair prices and have professional designers transform them into refined gifts. We achieve both solving social issues and providing the finest gift experience."
+    },
+    "founder": {
+      "title": "The Founder's Story",
+      "heading": "Rescuing flowers, bringing the joy of gifting into everyday life.",
+      "text1": "Our founder Hiro was born into a family running a flower wholesale business for generations in Toyama Prefecture (Japan's largest tulip producer). From childhood, he watched countless flowers being discarded without reaching the market, no matter how beautifully they bloomed.",
+      "text2": "During his six years in the Netherlands, he witnessed a 'culture of giving flowers in daily life.' People buying flowers not just for special occasions, but for gratitude and encouragement. This experience connected Japan's rich production background with the loss problem and the 'barrier to giving flowers.'",
+      "text3": "Not 'buying flowers' but 'rescuing flowers.' And 'giving them to someone special.' Bloombox proposes this new way of loving flowers."
+    },
+    "promise": {
+      "title": "Our Promise",
+      "heading": "Sustainability and uncompromising beauty.",
+      "items": {
+        "1": "Every flower comes with a story of the farmer and how it was rescued from disposal.",
+        "2": "A simple, refined gender-neutral UX that even men can choose from without hesitation.",
+        "3": "After enjoying as fresh flowers, transform into dried flowers. We propose ways to enjoy the passage of time."
+      }
+    }
+  },
   "flower_story": {
     "title": "Flower Story",
     "subtitle": "The story of how this flower reached you",

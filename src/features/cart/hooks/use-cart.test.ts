@@ -3,6 +3,21 @@ import { renderHook, act } from '@testing-library/react';
 import { useCart } from './use-cart';
 import { useCartStore } from '../store';
 import { createMockCartItem } from '@/test/mocks';
+import type { CartItem } from '../types';
+
+// Helper to create minimal cart item data for addToCart
+function createAddToCartData(overrides: Partial<Omit<CartItem, 'quantity'>> = {}): Omit<CartItem, 'quantity'> {
+  return {
+    productId: 'prod-001',
+    variantId: 'var-s',
+    name: 'Test',
+    variantName: 'S',
+    price: 1000,
+    imageUrl: '/test.jpg',
+    slug: 'test-product',
+    ...overrides,
+  };
+}
 
 describe('useCart hook', () => {
   beforeEach(() => {
@@ -37,6 +52,7 @@ describe('useCart hook', () => {
           variantName: item.variantName,
           price: item.price,
           imageUrl: item.imageUrl,
+          slug: item.slug,
         });
       });
 
@@ -49,12 +65,7 @@ describe('useCart hook', () => {
       const { result } = renderHook(() => useCart());
 
       act(() => {
-        result.current.addToCart({
-          productId: 'prod-001',
-          variantId: 'var-s',
-          name: 'Test',
-          price: 1000,
-        });
+        result.current.addToCart(createAddToCartData());
       });
 
       expect(result.current.items[0].quantity).toBe(1);
@@ -64,12 +75,7 @@ describe('useCart hook', () => {
       const { result } = renderHook(() => useCart());
 
       act(() => {
-        result.current.addToCart({
-          productId: 'prod-001',
-          variantId: 'var-s',
-          name: 'Test',
-          price: 1000,
-        }, 5);
+        result.current.addToCart(createAddToCartData(), 5);
       });
 
       expect(result.current.items[0].quantity).toBe(5);
@@ -81,12 +87,7 @@ describe('useCart hook', () => {
       const { result } = renderHook(() => useCart());
 
       act(() => {
-        result.current.addToCart({
-          productId: 'prod-001',
-          variantId: 'var-s',
-          name: 'Test',
-          price: 1000,
-        });
+        result.current.addToCart(createAddToCartData());
       });
 
       act(() => {
@@ -103,12 +104,7 @@ describe('useCart hook', () => {
       const { result } = renderHook(() => useCart());
 
       act(() => {
-        result.current.addToCart({
-          productId: 'prod-001',
-          variantId: 'var-s',
-          name: 'Test',
-          price: 1000,
-        });
+        result.current.addToCart(createAddToCartData());
       });
 
       act(() => {
@@ -125,8 +121,8 @@ describe('useCart hook', () => {
       const { result } = renderHook(() => useCart());
 
       act(() => {
-        result.current.addToCart({ productId: 'p1', variantId: 'v1', name: 'A', price: 100 });
-        result.current.addToCart({ productId: 'p2', variantId: 'v2', name: 'B', price: 200 });
+        result.current.addToCart(createAddToCartData({ productId: 'p1', variantId: 'v1', name: 'A', price: 100 }));
+        result.current.addToCart(createAddToCartData({ productId: 'p2', variantId: 'v2', name: 'B', price: 200 }));
       });
 
       act(() => {
@@ -189,8 +185,8 @@ describe('useCart hook', () => {
       const { result } = renderHook(() => useCart());
 
       act(() => {
-        result.current.addToCart({ productId: 'p1', variantId: 'v1', name: 'A', price: 100 }, 2);
-        result.current.addToCart({ productId: 'p2', variantId: 'v2', name: 'B', price: 200 }, 3);
+        result.current.addToCart(createAddToCartData({ productId: 'p1', variantId: 'v1', name: 'A', price: 100 }), 2);
+        result.current.addToCart(createAddToCartData({ productId: 'p2', variantId: 'v2', name: 'B', price: 200 }), 3);
       });
 
       expect(result.current.totalItems).toBe(5);
@@ -200,8 +196,8 @@ describe('useCart hook', () => {
       const { result } = renderHook(() => useCart());
 
       act(() => {
-        result.current.addToCart({ productId: 'p1', variantId: 'v1', name: 'A', price: 1000 }, 2);
-        result.current.addToCart({ productId: 'p2', variantId: 'v2', name: 'B', price: 500 }, 4);
+        result.current.addToCart(createAddToCartData({ productId: 'p1', variantId: 'v1', name: 'A', price: 1000 }), 2);
+        result.current.addToCart(createAddToCartData({ productId: 'p2', variantId: 'v2', name: 'B', price: 500 }), 4);
       });
 
       expect(result.current.subtotal).toBe(4000); // 1000*2 + 500*4
