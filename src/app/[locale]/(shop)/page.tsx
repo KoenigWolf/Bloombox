@@ -39,6 +39,26 @@ export default async function HomePage({ params }: HomePageProps) {
         <div className="absolute inset-0 z-0 pointer-events-none opacity-5 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
       </section>
 
+      {/* Mission Section - Link to Concept */}
+      <section className="py-24 md:py-32 bg-gradient-to-b from-primary-800 to-primary-900 text-white">
+        <Container>
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-primary-200 text-sm font-medium tracking-[0.3em] uppercase mb-6">
+              {t('mission.label')}
+            </p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif leading-tight mb-8">
+              {t('mission.headline')}
+            </h2>
+            <p className="text-lg md:text-xl text-primary-100 leading-relaxed mb-10">
+              {t('mission.description')}
+            </p>
+            <Button asChild variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-primary-900 rounded-full px-8">
+              <Link href="/concept">{t('mission.cta')}</Link>
+            </Button>
+          </div>
+        </Container>
+      </section>
+
       {/* Features Section */}
       <section className="py-24 bg-white border-b border-border">
         <Container>
