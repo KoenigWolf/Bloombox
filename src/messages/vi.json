@@ -291,5 +291,113 @@
       "description": "Chúng tôi xin lỗi. Đã xảy ra lỗi máy chủ.",
       "retry": "Thử lại"
     }
+  },
+  "concept": {
+    "metadata": {
+      "title": "Ý tưởng | Bloombox",
+      "description": "Trao vai trò 'cảm ơn' cho những bông hoa lẽ ra bị vứt bỏ. Khám phá tầm nhìn và sứ mệnh của Bloombox."
+    },
+    "hero": {
+      "label": "Tầm Nhìn",
+      "mission": "Trao vai trò 'cảm ơn'\ncho những bông hoa lẽ ra bị vứt bỏ.",
+      "tagline": "Flowers saved by you — Những bông hoa được bạn cứu"
+    },
+    "problem": {
+      "label": "Vấn Đề",
+      "headline": "1 tỷ bông hoa bị vứt bỏ mỗi năm khi vẫn còn đẹp",
+      "stat1": {
+        "number": "1 tỷ",
+        "label": "Hoa bị vứt bỏ hàng năm tại Nhật Bản"
+      },
+      "stat2": {
+        "number": "¥150 tỷ",
+        "label": "Thiệt hại kinh tế do lãng phí hoa"
+      },
+      "stat3": {
+        "number": "30%",
+        "label": "Tỷ lệ lãng phí trung bình tại cửa hàng hoa"
+      },
+      "description": "Kích thước không đạt tiêu chuẩn, mất cân đối cung cầu, kết thúc sự kiện — lý do khác nhau, nhưng vẻ đẹp của hoa không có vấn đề gì. Trong tay các nhà thiết kế chuyên nghiệp, hoa không đạt tiêu chuẩn trở thành những bó hoa độc đáo."
+    },
+    "solution": {
+      "label": "Giải Pháp",
+      "headline": "Từ 'mua hoa' sang 'cứu hoa'",
+      "before": {
+        "label": "EC Truyền thống",
+        "text": "Chọn sản phẩm → Giao hàng → Hoàn thành"
+      },
+      "after": {
+        "label": "Bloombox",
+        "text": "Cứu hoa → Kết nối với người → Đóng góp cho xã hội → Trải nghiệm cảm xúc"
+      },
+      "quote": "Chúng tôi mang đến trải nghiệm cứu hoa, không phải mua hoa"
+    },
+    "stories": {
+      "label": "Hệ Thống Câu Chuyện Hoa",
+      "headline": "Mỗi bông hoa đi kèm ba câu chuyện",
+      "flower": {
+        "title": "① Câu Chuyện Của Hoa",
+        "description": "Chúng tôi trực quan hóa cách hoa bạn mua đã được cứu. Chúng tôi chia sẻ số lượng hoa được cứu, thời gian trước khi bị vứt bỏ, giống, ý nghĩa hoa và nguồn gốc.",
+        "example": "\"Bạn đã cứu 12 bông hoa. Những bông hoa này được lên lịch vứt bỏ trong 48 giờ.\""
+      },
+      "people": {
+        "title": "② Câu Chuyện Của Người",
+        "description": "Bằng cách cho thấy khuôn mặt của nông dân và người bán hoa liên quan đến hoa, chúng tôi tăng cường sự đồng cảm và giá trị. Chúng tôi truyền tải trực tiếp tâm huyết của người sản xuất.",
+        "example": "\"Hanako Tanaka, Nông dân Tulip, Thành phố Tonami, Toyama: Ngay cả hoa không đạt tiêu chuẩn cũng rất đẹp\""
+      },
+      "journey": {
+        "title": "③ Câu Chuyện Hành Trình",
+        "description": "Chúng tôi hiển thị hành trình của hoa từ nông trại đến tay bạn theo dạng timeline. Mỗi bó hoa được gán một mã lô duy nhất.",
+        "step1": "Thu hoạch",
+        "step2": "Xuất thị trường",
+        "step3": "Dư thừa",
+        "step4": "Bloombox cứu",
+        "step5": "Thiết kế",
+        "step6": "Giao hàng"
+      }
+    },
+    "psychology": {
+      "label": "Thiết Kế Trải Nghiệm",
+      "headline": "Thiết kế trải nghiệm dựa trên kinh tế học hành vi",
+      "effect1": {
+        "title": "Hiệu Ứng Nạn Nhân Có Thể Nhận Dạng",
+        "description": "Mọi người cảm thấy đồng cảm mạnh mẽ hơn với các trường hợp cụ thể như \"những bông hoa này được lên lịch vứt bỏ trong 48 giờ\" hơn là thống kê như \"1 tỷ bông hoa bị vứt bỏ hàng năm.\""
+      },
+      "effect2": {
+        "title": "Hiệu Ứng IKEA",
+        "description": "Mọi người đánh giá cao hơn những thứ họ đã đóng góp. Bằng cách chuyển đổi hành vi mua từ \"mua hoa\" sang \"cứu hoa,\" chúng tôi tạo ra sự tham gia chủ động."
+      },
+      "effect3": {
+        "title": "Hiệu Ứng Sở Hữu",
+        "description": "Bằng cách thêm Câu Chuyện Hoa (câu chuyện về hoa và nông dân), ngay cả những bông hoa giống hệt về mặt vật lý cũng có giá trị tâm lý cao hơn đáng kể."
+      }
+    },
+    "impact": {
+      "label": "Tác Động Của Hoa",
+      "headline": "Việc mua hàng của bạn thay đổi xã hội",
+      "metric1": {
+        "value": "87",
+        "label": "Hoa được cứu"
+      },
+      "metric2": {
+        "value": "2.4kg",
+        "label": "CO2 giảm"
+      },
+      "metric3": {
+        "value": "340L",
+        "label": "Nước tiết kiệm"
+      },
+      "metric4": {
+        "value": "12",
+        "label": "Nông dân được hỗ trợ"
+      },
+      "description": "Mỗi lần bạn mua hoa từ Bloombox, đóng góp xã hội của bạn được trực quan hóa bằng số. Cả người gửi và người nhận đều có thể cảm nhận đóng góp xã hội nhỏ của việc cứu hoa."
+    },
+    "vision": {
+      "headline": "Cứu hoa, mang niềm vui tặng quà vào cuộc sống hàng ngày",
+      "description": "Không phải 'mua hoa' mà là 'cứu hoa'. Và tặng cho người đặc biệt. Bloombox đề xuất cách yêu hoa mới này. Đạt được cả việc giải quyết vấn đề xã hội và mang đến trải nghiệm quà tặng tốt nhất — đó là tầm nhìn của chúng tôi.",
+      "tagline_label": "Khẩu Hiệu Thương Hiệu",
+      "tagline_translation": "Những bông hoa được bạn cứu"
+    }
   }
 }

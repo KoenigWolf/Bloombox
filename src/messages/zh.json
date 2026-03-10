@@ -291,5 +291,113 @@
       "description": "抱歉，服务器发生错误。",
       "retry": "重试"
     }
+  },
+  "concept": {
+    "metadata": {
+      "title": "理念 | Bloombox",
+      "description": "让即将被丢弃的花，承担「感谢」的角色。了解Bloombox的愿景与使命。"
+    },
+    "hero": {
+      "label": "Our Vision",
+      "mission": "让即将被丢弃的花，\n承担「感谢」的角色。",
+      "tagline": "Flowers saved by you — 被你拯救的花"
+    },
+    "problem": {
+      "label": "问题",
+      "headline": "每年10亿枝鲜花在仍然美丽时被丢弃",
+      "stat1": {
+        "number": "10亿",
+        "label": "日本每年丢弃的鲜花数量"
+      },
+      "stat2": {
+        "number": "1500亿",
+        "label": "花卉损耗造成的经济损失（日元）"
+      },
+      "stat3": {
+        "number": "30%",
+        "label": "花店平均废弃率"
+      },
+      "description": "不符合规格、供需不匹配、活动结束——原因各种各样，但花本身的美丽没有任何问题。在专业设计师的手中，不规格的花反而能变成独特的插花作品。"
+    },
+    "solution": {
+      "label": "解决方案",
+      "headline": "从「买花」到「救花」",
+      "before": {
+        "label": "传统电商",
+        "text": "选择商品 → 配送 → 完成"
+      },
+      "after": {
+        "label": "Bloombox",
+        "text": "拯救花 → 连接人 → 贡献社会 → 情感体验"
+      },
+      "quote": "我们提供的不是买花的体验，而是救花的体验"
+    },
+    "stories": {
+      "label": "花之故事系统",
+      "headline": "每朵花都附带三个故事",
+      "flower": {
+        "title": "① 花的故事",
+        "description": "我们可视化展示您购买的花是如何被拯救的。我们分享拯救的花朵数量、距离丢弃的时间、品种、花语和产地。",
+        "example": "「您拯救了12朵花。这些花原定48小时后被丢弃。」"
+      },
+      "people": {
+        "title": "② 人的故事",
+        "description": "通过展示与花相关的农户和花店的面孔，增强共鸣和价值。我们直接传递生产者的心意。",
+        "example": "「富山县�的波市 郁金香农户 田中花子：即使是不规格的花，也有很多非常美丽的。」"
+      },
+      "journey": {
+        "title": "③ 旅程的故事",
+        "description": "以时间线形式展示花从农场到您手中的旅程。每束花都会分配一个独特的批次ID。",
+        "step1": "收获",
+        "step2": "市场出货",
+        "step3": "出现剩余",
+        "step4": "Bloombox拯救",
+        "step5": "设计",
+        "step6": "送达"
+      }
+    },
+    "psychology": {
+      "label": "体验设计",
+      "headline": "基于行为经济学的体验设计",
+      "effect1": {
+        "title": "可识别受害者效应",
+        "description": "比起「每年丢弃10亿朵花」这样的统计数据，人们对「这朵花原定48小时后被丢弃」这样的具体对象有更强的共鸣和行动意愿。"
+      },
+      "effect2": {
+        "title": "宜家效应",
+        "description": "人们更珍视自己参与的事物。通过将购买行为从「买花」转变为「救花」，我们创造了主动参与感。"
+      },
+      "effect3": {
+        "title": "禀赋效应",
+        "description": "通过添加花之故事（花和农户的故事），即使是物理上相同的花，心理价值也会显著提高。"
+      }
+    },
+    "impact": {
+      "label": "花之影响",
+      "headline": "您的购买改变社会",
+      "metric1": {
+        "value": "87朵",
+        "label": "拯救的花"
+      },
+      "metric2": {
+        "value": "2.4kg",
+        "label": "减少的CO2"
+      },
+      "metric3": {
+        "value": "340L",
+        "label": "节约的水"
+      },
+      "metric4": {
+        "value": "12人",
+        "label": "支持的农户"
+      },
+      "description": "每次您从Bloombox购买鲜花，您的社会贡献都会以数字形式可视化。送礼者和收礼者都能感受到拯救花朵的小小社会贡献。"
+    },
+    "vision": {
+      "headline": "拯救花朵，让赠送的喜悦融入日常",
+      "description": "不是「买花」而是「救花」。然后送给重要的人。Bloombox提出这种新的爱花方式。既解决社会问题，又提供最高级的礼品体验——这就是我们的愿景。",
+      "tagline_label": "品牌口号",
+      "tagline_translation": "被你拯救的花"
+    }
   }
 }

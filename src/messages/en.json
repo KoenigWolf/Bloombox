@@ -291,5 +291,113 @@
       "description": "We're sorry. A server error has occurred.",
       "retry": "Retry"
     }
+  },
+  "concept": {
+    "metadata": {
+      "title": "Concept | Bloombox",
+      "description": "Giving flowers destined for disposal a role of gratitude. Discover the vision and mission of Bloombox."
+    },
+    "hero": {
+      "label": "Our Vision",
+      "mission": "Giving flowers destined for disposal\na role of gratitude.",
+      "tagline": "Flowers saved by you"
+    },
+    "problem": {
+      "label": "The Problem",
+      "headline": "1 billion flowers are discarded each year while still beautiful",
+      "stat1": {
+        "number": "1B",
+        "label": "Flowers discarded annually in Japan"
+      },
+      "stat2": {
+        "number": "¥150B",
+        "label": "Economic loss from flower waste"
+      },
+      "stat3": {
+        "number": "30%",
+        "label": "Average waste rate at flower shops"
+      },
+      "description": "Non-standard sizes, supply-demand mismatches, end of events — the reasons vary, but there's nothing wrong with the beauty of the flowers themselves. In the hands of professional designers, non-standard flowers become uniquely beautiful arrangements."
+    },
+    "solution": {
+      "label": "The Solution",
+      "headline": "From 'buying flowers' to 'rescuing flowers'",
+      "before": {
+        "label": "Traditional EC",
+        "text": "Select product → Delivery → Done"
+      },
+      "after": {
+        "label": "Bloombox",
+        "text": "Rescue flowers → Connect with people → Contribute to society → Emotional experience"
+      },
+      "quote": "We provide an experience of rescuing flowers, not buying them"
+    },
+    "stories": {
+      "label": "Flower Story System",
+      "headline": "Every flower comes with three stories",
+      "flower": {
+        "title": "① The Flower's Story",
+        "description": "We visualize how your purchased flowers were rescued. We share the number of flowers rescued, time until disposal, variety, flower meaning, and origin.",
+        "example": "\"You rescued 12 flowers. These flowers were scheduled for disposal in 48 hours.\""
+      },
+      "people": {
+        "title": "② The People's Story",
+        "description": "By showing the faces of farmers and florists involved with the flowers, we enhance empathy and value. We deliver the producers' passion directly to you.",
+        "example": "\"Hanako Tanaka, Tulip Farmer, Tonami City, Toyama: Even non-standard flowers are incredibly beautiful\""
+      },
+      "journey": {
+        "title": "③ The Journey's Story",
+        "description": "We display the flower's journey from farm to your hands in timeline format. Each bouquet is assigned a unique batch ID.",
+        "step1": "Harvested",
+        "step2": "Market Shipment",
+        "step3": "Surplus Occurred",
+        "step4": "Rescued by Bloombox",
+        "step5": "Designed",
+        "step6": "Delivered"
+      }
+    },
+    "psychology": {
+      "label": "Experience Design",
+      "headline": "Experience design based on behavioral economics",
+      "effect1": {
+        "title": "Identifiable Victim Effect",
+        "description": "People feel stronger empathy for specific cases like \"these flowers were scheduled for disposal in 48 hours\" rather than statistics like \"1 billion flowers discarded annually.\""
+      },
+      "effect2": {
+        "title": "IKEA Effect",
+        "description": "People value things they've contributed to more highly. By transforming the purchase from \"buying flowers\" to \"rescuing flowers,\" we create active participation."
+      },
+      "effect3": {
+        "title": "Endowment Effect",
+        "description": "By adding the Flower Story (stories of flowers and farmers), even physically identical flowers gain significantly higher psychological value."
+      }
+    },
+    "impact": {
+      "label": "Flower Impact",
+      "headline": "Your purchase changes society",
+      "metric1": {
+        "value": "87",
+        "label": "Flowers rescued"
+      },
+      "metric2": {
+        "value": "2.4kg",
+        "label": "CO2 reduced"
+      },
+      "metric3": {
+        "value": "340L",
+        "label": "Water saved"
+      },
+      "metric4": {
+        "value": "12",
+        "label": "Farmers supported"
+      },
+      "description": "Every time you purchase flowers from Bloombox, your social contribution is visualized numerically. Both sender and recipient can feel the small social contribution of rescuing flowers."
+    },
+    "vision": {
+      "headline": "Rescuing flowers, bringing gifting joy to everyday life",
+      "description": "Not 'buying flowers' but 'rescuing flowers.' And giving them to someone special. Bloombox proposes this new way of loving flowers. Achieving both solving social issues and providing the finest gift experience — that is our vision.",
+      "tagline_label": "Brand Copy",
+      "tagline_translation": "Flowers saved by you"
+    }
   }
 }
