@@ -7,9 +7,9 @@ export default async function SignupPage() {
 
   return (
     <div className="min-h-[calc(100vh-200px)] flex items-center justify-center px-4">
-      <Card className="w-full max-w-md">
-        <CardHeader className="text-center">
-          <CardTitle className="text-2xl">{t('sign_up_title')}</CardTitle>
+      <Card className="w-full max-w-md border-4 border-foreground shadow-[8px_8px_0px_var(--color-foreground)] bg-white p-4">
+        <CardHeader className="text-center pb-8 border-b-2 border-foreground mb-8">
+          <CardTitle className="text-4xl font-serif font-bold uppercase tracking-wider">{t('sign_up_title')} ✨</CardTitle>
         </CardHeader>
         <CardContent>
           <SignupForm />

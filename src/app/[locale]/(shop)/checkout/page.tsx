@@ -56,9 +56,10 @@ export default function CheckoutPage() {
     return (
       <section className="py-12">
         <Container>
-          <Card className="p-12 text-center">
-            <p className="text-neutral-500 mb-6">カートが空です</p>
-            <Button onClick={() => router.push('/products')}>
+          <Card className="p-12 text-center border-4 border-foreground shadow-[8px_8px_0px_var(--color-foreground)]">
+            <h2 className="text-3xl font-serif font-bold mb-4">カートが空です 🛒</h2>
+            <p className="text-foreground/70 mb-6 font-medium">お探しの商品を見つけましょう。</p>
+            <Button size="lg" onClick={() => router.push('/products')}>
               商品を探す
             </Button>
           </Card>
@@ -70,14 +71,14 @@ export default function CheckoutPage() {
   return (
     <section className="py-12">
       <Container>
-        <h1 className="text-3xl font-bold mb-8">{t('title')}</h1>
+        <h1 className="text-5xl font-serif font-bold mb-8 text-foreground uppercase tracking-tight">{t('title')}</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* 注文内容 */}
           <div className="lg:col-span-2">
-            <Card className="p-6">
-              <h2 className="text-lg font-semibold mb-4">{t('order_summary')}</h2>
-              <div className="divide-y divide-neutral-100">
+            <Card className="p-6 border-2 border-foreground">
+              <h2 className="text-2xl font-serif font-bold mb-4 uppercase">{t('order_summary')}</h2>
+              <div className="divide-y-2 divide-foreground">
                 {items.map((item) => (
                   <div
                     key={`${item.productId}-${item.variantId}`}
@@ -86,15 +87,15 @@ export default function CheckoutPage() {
                     <div>
                       <p className="font-medium">{item.name}</p>
                       {item.variantName && (
-                        <p className="text-sm text-neutral-500">
+                        <p className="text-sm font-bold uppercase tracking-wider text-foreground/70">
                           {item.variantName}
                         </p>
                       )}
-                      <p className="text-sm text-neutral-500">
+                      <p className="text-sm font-bold tracking-wider text-foreground/70">
                         数量: {item.quantity}
                       </p>
                     </div>
-                    <p className="font-medium">
+                    <p className="text-lg font-bold text-foreground">
                       {formatCurrency(item.price * item.quantity, locale)}
                     </p>
                   </div>
@@ -104,16 +105,16 @@ export default function CheckoutPage() {
 
             {/* ギフトオプション */}
             {giftOptions.isGift && (
-              <Card className="p-6 mt-6">
-                <h2 className="text-lg font-semibold mb-4">
-                  {t('gift_options.title')}
+              <Card className="p-6 mt-6 border-2 border-foreground shadow-[4px_4px_0px_var(--color-foreground)]">
+                <h2 className="text-2xl font-serif font-bold mb-4 uppercase">
+                  {t('gift_options.title')} 🎁
                 </h2>
                 {giftOptions.message && (
                   <div className="mb-4">
-                    <p className="text-sm text-neutral-500">
+                    <p className="text-sm font-bold uppercase tracking-wider text-foreground/70">
                       {t('gift_options.message')}
                     </p>
-                    <p className="mt-1">{giftOptions.message}</p>
+                    <p className="mt-2 text-foreground p-3 border-2 border-foreground bg-white italic">{giftOptions.message}</p>
                   </div>
                 )}
               </Card>
@@ -122,25 +123,27 @@ export default function CheckoutPage() {
 
           {/* 支払い */}
           <div>
-            <Card className="p-6 sticky top-24">
-              <h2 className="text-lg font-semibold mb-4">{t('payment')}</h2>
-              <div className="space-y-3 border-b border-neutral-200 pb-4 mb-4">
+            <Card className="p-6 sticky top-32 border-2 border-foreground shadow-[4px_4px_0px_var(--color-foreground)] bg-white">
+              <h2 className="text-2xl font-serif font-bold mb-4 uppercase">{t('payment')}</h2>
+              <div className="space-y-3 border-b-2 border-foreground pb-4 mb-4">
                 <div className="flex justify-between text-sm">
-                  <span className="text-neutral-600">小計</span>
-                  <span>{formatCurrency(subtotal, locale)}</span>
+                  <span className="font-bold uppercase tracking-wider">小計</span>
+                  <span className="font-bold">{formatCurrency(subtotal, locale)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-neutral-600">送料</span>
-                  <span>無料</span>
+                  <span className="font-bold uppercase tracking-wider">送料</span>
+                  <span className="font-bold">無料</span>
                 </div>
               </div>
-              <div className="flex justify-between text-lg font-semibold mb-6">
+              <div className="flex justify-between text-xl font-bold mb-6 uppercase">
                 <span>合計</span>
                 <span>{formatCurrency(subtotal, locale)}</span>
               </div>
 
               {error && (
-                <p className="text-sm text-error mb-4">{error}</p>
+                <div className="bg-[#EA5B3B]/10 border-2 border-[#EA5B3B] p-3 mb-4 text-[#EA5B3B] font-bold text-sm">
+                  {error}
+                </div>
               )}
 
               <Button
@@ -158,7 +161,7 @@ export default function CheckoutPage() {
                   t('place_order')
                 )}
               </Button>
-              <p className="text-xs text-neutral-500 mt-4 text-center">
+              <p className="text-xs font-bold text-foreground/50 mt-4 text-center">
                 {t('terms')}
               </p>
             </Card>

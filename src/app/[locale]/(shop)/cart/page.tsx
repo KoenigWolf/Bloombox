@@ -19,7 +19,7 @@ export default function CartPage() {
   return (
     <section className="py-12">
       <Container>
-        <h1 className="text-3xl font-bold mb-8">{t('title')}</h1>
+        <h1 className="text-5xl font-serif font-bold mb-8 text-foreground uppercase tracking-tight">{t('title')}</h1>
 
         {isEmpty ? (
           <Card className="p-12 text-center">
@@ -32,14 +32,14 @@ export default function CartPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Cart Items */}
             <div className="lg:col-span-2">
-              <Card className="divide-y divide-neutral-100">
+              <Card className="divide-y-2 divide-foreground">
                 {items.map((item) => (
                   <div
                     key={`${item.productId}-${item.variantId}`}
                     className="flex gap-4 p-4"
                   >
                     {/* Image */}
-                    <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-lg bg-neutral-100">
+                    <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden border-2 border-foreground bg-[#F9EAE6]">
                       {item.imageUrl ? (
                         <Image
                           src={item.imageUrl}
@@ -59,16 +59,16 @@ export default function CartPage() {
                     <div className="flex-1 min-w-0">
                       <Link
                         href={`/products/${item.slug}`}
-                        className="font-medium hover:text-primary-600"
+                        className="text-xl font-bold hover:text-primary-DEFAULT transition-colors"
                       >
                         {item.name}
                       </Link>
                       {item.variantName && (
-                        <p className="text-sm text-neutral-500 mt-0.5">
+                        <p className="text-sm font-bold uppercase tracking-wider text-foreground/70 mt-0.5">
                           {item.variantName}
                         </p>
                       )}
-                      <p className="text-lg font-semibold text-primary-600 mt-2">
+                      <p className="text-lg font-bold text-foreground mt-2">
                         {formatCurrency(item.price * item.quantity, locale)}
                       </p>
                     </div>
@@ -79,7 +79,7 @@ export default function CartPage() {
                         onClick={() =>
                           removeItem(item.productId, item.variantId)
                         }
-                        className="text-neutral-400 hover:text-error"
+                        className="text-foreground/50 hover:text-primary-DEFAULT transition-colors"
                       >
                         <Trash2 className="h-5 w-5" />
                       </button>
@@ -92,11 +92,11 @@ export default function CartPage() {
                               item.quantity - 1
                             )
                           }
-                          className="p-2 rounded border border-neutral-300 hover:bg-neutral-50"
+                          className="p-2 border-2 border-foreground bg-white hover:bg-primary-DEFAULT hover:text-white transition-colors"
                         >
                           <Minus className="h-4 w-4" />
                         </button>
-                        <span className="text-sm w-8 text-center">
+                        <span className="text-sm w-8 text-center font-bold">
                           {item.quantity}
                         </span>
                         <button
@@ -120,19 +120,19 @@ export default function CartPage() {
 
             {/* Order Summary */}
             <div>
-              <Card className="p-6 sticky top-24">
-                <h2 className="text-lg font-semibold mb-4">注文概要</h2>
-                <div className="space-y-3 border-b border-neutral-200 pb-4 mb-4">
+              <Card className="p-6 sticky top-32">
+                <h2 className="text-2xl font-serif font-bold mb-4 uppercase">注文概要</h2>
+                <div className="space-y-3 border-b-2 border-foreground pb-4 mb-4">
                   <div className="flex justify-between text-sm">
-                    <span className="text-neutral-600">{t('subtotal')}</span>
-                    <span>{formatCurrency(subtotal, locale)}</span>
+                    <span className="font-bold uppercase tracking-wider">{t('subtotal')}</span>
+                    <span className="font-bold">{formatCurrency(subtotal, locale)}</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span className="text-neutral-600">{t('shipping')}</span>
-                    <span>計算中...</span>
+                    <span className="font-bold uppercase tracking-wider">{t('shipping')}</span>
+                    <span className="font-bold">計算中...</span>
                   </div>
                 </div>
-                <div className="flex justify-between text-lg font-semibold mb-6">
+                <div className="flex justify-between text-xl font-bold mb-6 uppercase">
                   <span>{t('total')}</span>
                   <span>{formatCurrency(subtotal, locale)}</span>
                 </div>
