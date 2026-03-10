@@ -299,6 +299,99 @@
       "retry": "Thử lại"
     }
   },
+  "brand": {
+    "hero": {
+      "label": "Bloombox",
+      "headline": "Đưa hoa vào cuộc sống hàng ngày.\nTặng hoa một cách thoải mái hơn.",
+      "subheadline": "Làm cho việc tặng hoa trở nên dễ dàng hơn. BloomBox mang đến cách thức mới để truyền tải tình cảm qua hoa."
+    },
+    "origin": {
+      "label": "Our Origin",
+      "headline": "Tôi muốn hoa trở nên gần gũi hơn với mọi người.",
+      "p1": "Ở châu Âu và Mỹ, tặng hoa là hành động rất tự nhiên. Khi đến thăm nhà ai đó, khi muốn nói 'cảm ơn' hoặc 'chúc mừng', họ chọn hoa mà không do dự.",
+      "p2": "Trong sáu năm sống ở Hà Lan, tôi đã chứng kiến điều này như một phần của cuộc sống hàng ngày. Đi dạo ở Amsterdam, tôi gặp nhiều người cầm bó hoa. Khi được mời đến nhà bạn, người Hà Lan đi cùng tôi tặng hoa như thể đó là điều tự nhiên nhất.",
+      "quote": "\"Thể hiện tình cảm qua hoa có thể tinh tế và tuyệt vời đến vậy.\"",
+      "p3": "Hỏi bạn bè Hà Lan, hoa là thứ rất quen thuộc với họ. Đàn ông đã kết hôn mua hoa về nhà mỗi tuần là chuyện bình thường. Khi có hoa trong nhà, không gian sáng hơn, tâm trạng gia đình cũng tự nhiên tốt hơn. Đó là thói quen rất đơn giản nhưng rất có giá trị."
+    },
+    "opportunity": {
+      "label": "The Opportunity",
+      "headline": "Nhật Bản là đất nước có tiềm năng lớn chưa được khai thác trong việc tặng hoa.",
+      "stat1": {
+        "number": "5-7 lần",
+        "label": "Cơ hội tặng/nhận hoa ở phương Tây (trung bình năm)"
+      },
+      "stat2": {
+        "number": "Dưới 1 lần",
+        "label": "Cơ hội tặng/nhận hoa ở Nhật (trung bình năm)"
+      },
+      "insight": "Tuy nhiên, khảo sát cho thấy khoảng 70% người Nhật 'muốn tặng hoa', và khoảng 80% nói rằng họ 'sẽ vui khi nhận hoa'.",
+      "conclusion": "BloomBox muốn đưa văn hóa tặng hoa thoải mái vào cuộc sống hàng ngày. Vì hoa làm vui lòng người nhận, làm phong phú không gian, biến những ngày bình thường thành đặc biệt, và lưu lại trong ký ức người nhận."
+    },
+    "power": {
+      "label": "The Power of Flowers",
+      "headline": "Hoa: Món Quà Tối Thượng",
+      "nonintrusive": {
+        "title": "Món Quà Không Áp Đặt",
+        "description": "Hoa là món quà không áp đặt. Chúng không tự khẳng định quá mức và không tạo gánh nặng cho người nhận. Dễ dàng được chấp nhận và hòa nhập tự nhiên vào mọi không gian. Hoa hoàn thành vai trò trong khoảng một tuần, lặng lẽ biến đổi. Đó là lý do chúng có thể đồng hành trong nhiều dịp—sinh nhật, tân gia, kỷ niệm, bày tỏ lòng biết ơn."
+      },
+      "emotion": {
+        "title": "Hoa Truyền Tải Cảm Xúc",
+        "description": "Khi thấy hoa, người ta liên tưởng đến Happiness (Hạnh phúc), Love (Tình yêu), và Attention (Sự quan tâm). Hoa trang trí không gian đẹp đẽ và có thể thưởng thức như sở thích. Nhưng giá trị không dừng lại ở đó. Hoa có sức mạnh chạm nhẹ vào trái tim, truyền tải suy nghĩ và lay động cảm xúc."
+      },
+      "quote": "Flowers speak louder than words. (Hoa đôi khi hùng biện hơn lời nói)"
+    },
+    "value": {
+      "label": "Our Value Proposition",
+      "headline": "Hình Thức Của Tình Cảm Giữa Con Người",
+      "p1": "Quà tặng là hành động truyền tải tình cảm—'cảm ơn', 'luôn nghĩ về bạn', 'yêu bạn', đôi khi là 'xin lỗi'—đến người ở xa hoặc người bạn quan tâm. Tuy nhiên, chọn món quà thực sự truyền tải được tình cảm lại khó bất ngờ.",
+      "highlight": "BloomBox không chỉ là dịch vụ quà tặng. Nó tồn tại để làm cho mối quan hệ giữa người với người trở nên dịu dàng và phong phú hơn.",
+      "p2": "Gửi đến người không thể gặp ngay nhưng muốn chuyển tải tình cảm. Đến người quan trọng ở Nhật. Từ nước ngoài đến người yêu, gia đình, bạn bè ở Nhật. BloomBox nhận tình cảm của bạn, chuyển thành hoa, và gửi đến người đặc biệt. Làm cho những tình cảm không lời trở nên đẹp hơn, chắc chắn hơn.",
+      "global": {
+        "title": "Nhật Bản Như Thị Trường Quà Tặng Toàn Cầu",
+        "description": "Gần đây, người từ nước ngoài sống, làm việc, học tập ở Nhật đang tăng nhanh. Nhiều người trong số họ lớn lên trong văn hóa 'tặng hoa'. BloomBox tạo nơi bạn có thể tự nhiên và thông minh truyền tải tình cảm qua hoa, giống như ở quê hương, ngay tại Nhật Bản."
+      }
+    },
+    "sustainability": {
+      "label": "Sustainability",
+      "headline": "Care for Flowers",
+      "subheadline": "Chúng tôi muốn cứu càng nhiều hoa càng tốt.",
+      "stat1": {
+        "number": "4.06 tỷ",
+        "label": "Sản lượng hoa hàng năm ở Nhật"
+      },
+      "stat2": {
+        "number": "15-20%",
+        "label": "Bị loại bỏ vì không đạt tiêu chuẩn"
+      },
+      "stat3": {
+        "number": "600-800 triệu",
+        "label": "Hoa bị xử lý hàng năm"
+      },
+      "stat4": {
+        "number": "∞",
+        "label": "Tiềm năng cứu hoa"
+      },
+      "p1": "Trong ngành hoa hiện nay, nhiều hoa vẫn mất nơi đến. Chỉ vì hơi ngắn hoặc ít lá, khoảng 15-20% sản lượng bị loại bỏ. Nông dân cũng không muốn vứt bỏ. Họ đơn giản là không có lựa chọn khác.",
+      "happyflower": {
+        "title": "Happy Flower",
+        "description": "Tại BloomBox, chúng tôi đặt tên 'Happy Flower' cho những bông hoa không thể ra thị trường do không đạt tiêu chuẩn hoặc dư thừa. Những bông hoa không thể xuất do hủy đơn hoặc không đạt chuẩn. Nhưng mỗi bông đều vốn đẹp và đáng yêu."
+      },
+      "seedpaper": {
+        "title": "Giấy Hạt Giống: Kết Nối Sự Sống",
+        "description": "Happy Flower đi kèm nhãn đặc biệt làm từ giấy hạt giống. Khi trồng xuống đất và tưới nước, nó sẽ nở hoa trở lại. Những bông hoa định bị vứt bỏ trở về đất và nở như sự sống mới. Chúng tôi tin vòng tuần hoàn nhỏ này sẽ trở thành sức mạnh bảo vệ tương lai ngành hoa Nhật Bản."
+      }
+    },
+    "vision": {
+      "label": "Our Vision",
+      "headline": "Hạnh Phúc Tuần Hoàn",
+      "description": "Trưng bày hoa. Tặng hoa. Hành động đơn giản như vậy, nhưng tạo ra bao nhiêu nụ cười? Làm dịu trái tim của chúng ta đến mức nào? Khi bạn tặng hoa, bạn cảm thấy vui hơn một chút. Sự lựa chọn đó kết nối với tương lai nơi nông dân hoa có thể tiếp tục trồng hoa.",
+      "closing": "Một thế giới nơi mọi người liên quan đến hoa được kết nối dịu dàng, và hạnh phúc tự nhiên tuần hoàn."
+    },
+    "cta": {
+      "headline": "Chuyển tình cảm của bạn thành hoa.",
+      "button": "Xem Sản Phẩm"
+    }
+  },
   "concept": {
     "metadata": {
       "title": "Ý tưởng | Bloombox",

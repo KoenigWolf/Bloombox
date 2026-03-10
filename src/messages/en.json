@@ -299,6 +299,99 @@
       "retry": "Retry"
     }
   },
+  "brand": {
+    "hero": {
+      "label": "Bloombox",
+      "headline": "More flowers in everyday life.\nMore flowers, more casually.",
+      "subheadline": "Making flower gifting more accessible. BloomBox offers a new way to express your feelings through flowers."
+    },
+    "origin": {
+      "label": "Our Origin",
+      "headline": "I want to make flowers a more familiar presence in people's lives.",
+      "p1": "In Europe and America, giving flowers is a very natural act. When visiting someone's home. When wanting to say 'thank you' or 'congratulations.' They choose flowers without hesitation.",
+      "p2": "During my six years living in the Netherlands, I witnessed this as part of daily life. Walking through Amsterdam, I'd pass many people carrying bouquets. When invited to a friend's home, the Dutch person who came with me would gift flowers as if it were the most natural thing in the world.",
+      "quote": "\"Expressing feelings through flowers can be this sophisticated and cool.\"",
+      "p3": "Even asking my Dutch friends, flowers are a familiar presence in their lives. It's not unusual for married men to buy flowers for home once a week. When flowers are displayed at home, the space brightens up, and the family's mood naturally improves. It's a very simple, yet very valuable habit."
+    },
+    "opportunity": {
+      "label": "The Opportunity",
+      "headline": "Japan is a country with great untapped potential in flower gifting.",
+      "stat1": {
+        "number": "5-7 times",
+        "label": "Flower giving/receiving occasions in the West (annual average)"
+      },
+      "stat2": {
+        "number": "Less than 1",
+        "label": "Flower giving/receiving occasions in Japan (annual average)"
+      },
+      "insight": "However, surveys show that about 70% of Japanese people \"want to give flowers as gifts,\" and about 80% say they \"would be happy to receive flowers.\"",
+      "conclusion": "BloomBox wants to make the culture of casually gifting flowers more part of everyday life. Because flowers delight the recipient, enrich the space, transform ordinary days into something a little special, and remain in the recipient's memory."
+    },
+    "power": {
+      "label": "The Power of Flowers",
+      "headline": "Flowers: The Ultimate Gift",
+      "nonintrusive": {
+        "title": "The Non-Intrusive Gift",
+        "description": "Flowers are a non-intrusive gift. They don't impose themselves, and they don't burden the recipient. They're easy for most people to accept and blend naturally into any space. And flowers complete their role in about a week, quietly transforming. That's why they can accompany various occasions—baby showers, housewarming, anniversaries, expressing gratitude."
+      },
+      "emotion": {
+        "title": "Flowers Convey Feelings",
+        "description": "When people see flowers, they associate them with Happiness, Love, and Attention. Flowers beautifully adorn spaces and can be enjoyed as a hobby. But their value doesn't stop there. Flowers have the power to gently touch people's hearts, convey thoughts, and move emotions."
+      },
+      "quote": "Flowers speak louder than words."
+    },
+    "value": {
+      "label": "Our Value Proposition",
+      "headline": "The Shape of Feelings Between People",
+      "p1": "A gift is an act of conveying various feelings—'thank you,' 'I'm always thinking of you,' 'I love you,' sometimes 'I'm sorry'—to someone far away or someone you care about daily. Yet choosing a gift that truly conveys your feelings is surprisingly difficult.",
+      "highlight": "BloomBox is not just a gift service. It exists to make relationships between people gentler and richer.",
+      "p2": "To someone you can't meet right now but want to reach. To someone precious in Japan. From overseas to your partner, family, or friends in Japan. BloomBox receives your feelings, transforms them into flowers, and delivers them to your special someone. Making unspoken feelings more beautiful, more certain.",
+      "global": {
+        "title": "Japan as a Global Gift Market",
+        "description": "In recent years, people from overseas living, working, and studying in Japan have been rapidly increasing. Many of them grew up in cultures where 'giving flowers' is natural. BloomBox creates a place where you can naturally and smartly express feelings through flowers, just as you did in your home country, while in Japan."
+      }
+    },
+    "sustainability": {
+      "label": "Sustainability",
+      "headline": "Care for Flowers",
+      "subheadline": "We want to save as many flowers as possible.",
+      "stat1": {
+        "number": "4.06B",
+        "label": "Annual flower production in Japan"
+      },
+      "stat2": {
+        "number": "15-20%",
+        "label": "Discarded as non-standard"
+      },
+      "stat3": {
+        "number": "600-800M",
+        "label": "Flowers disposed annually"
+      },
+      "stat4": {
+        "number": "∞",
+        "label": "Potential to save"
+      },
+      "p1": "In the flower industry today, many flowers still lose their destination. Just because they're slightly short or have fewer leaves, about 15-20% of production is discarded. Farmers don't want to discard them either. They simply have no other choice.",
+      "happyflower": {
+        "title": "Happy Flower",
+        "description": "At BloomBox, we've named flowers that couldn't reach the market due to non-standard specifications or surplus 'Happy Flower.' Flowers that couldn't be shipped due to cancellations or not meeting standards. Yet each one is inherently beautiful and lovely."
+      },
+      "seedpaper": {
+        "title": "Seed Paper: Connecting Life",
+        "description": "Happy Flowers come with a special label made of seed paper. When planted in soil and watered, it blooms again. Flowers that were destined for disposal return to the earth and bloom as new life. We believe this small cycle becomes a force to protect the future of Japan's flower industry."
+      }
+    },
+    "vision": {
+      "label": "Our Vision",
+      "headline": "Happiness Circulates",
+      "description": "Displaying flowers. Giving flowers. Such simple acts, yet how many smiles do they create? How gently do they color our hearts? When you give flowers, you feel a little happier. That choice connects to a future where flower farmers can continue growing flowers.",
+      "closing": "A world where everyone involved with flowers is gently connected, and happiness naturally circulates."
+    },
+    "cta": {
+      "headline": "Transform your feelings into flowers.",
+      "button": "View Products"
+    }
+  },
   "concept": {
     "metadata": {
       "title": "Concept | Bloombox",
