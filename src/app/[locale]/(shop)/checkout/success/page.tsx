@@ -18,11 +18,11 @@ export default function CheckoutSuccessPage() {
   return (
     <section className="py-12">
       <Container className="max-w-2xl">
-        <Card className="p-12 text-center border-4 border-foreground shadow-[8px_8px_0px_var(--color-foreground)] bg-white">
-          <div className="inline-flex items-center justify-center p-4 bg-[#F9EAE6] border-2 border-foreground rounded-full mb-8">
+        <Card className="p-12 text-center shadow-md bg-white">
+          <div className="inline-flex items-center justify-center p-4 bg-primary-50 rounded-full mb-8">
             <span className="text-6xl">🎉</span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-foreground tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-serif font-medium mb-6 text-foreground tracking-tight">
             ご注文ありがとうございます！
           </h1>
           <p className="text-lg text-foreground font-medium mb-8 leading-relaxed">

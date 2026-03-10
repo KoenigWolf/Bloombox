@@ -1,30 +1,30 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Colors - Bloombox Brand */
-  --color-primary-50: #fde8e4;
-  --color-primary-100: #facac0;
-  --color-primary-200: #f6ab9b;
-  --color-primary-300: #f28b77;
-  --color-primary-400: #ee6c53;
-  --color-primary-500: #EA5B3B;
-  /* Poppy Red */
-  --color-primary-600: #d14122;
-  --color-primary-700: #a7331b;
-  --color-primary-800: #7d2614;
-  --color-primary-900: #54190e;
+  /* Colors - Bloombox Brand (Deep Green & Beige Theme) */
+  --color-primary-50: #f2f7f5;
+  --color-primary-100: #e1efe8;
+  --color-primary-200: #c5dfd4;
+  --color-primary-300: #9bc5b6;
+  --color-primary-400: #6ca593;
+  --color-primary-500: #468673;
+  /* Deep Green */
+  --color-primary-600: #366b5a;
+  --color-primary-700: #2d5649;
+  --color-primary-800: #25463c;
+  --color-primary-900: #1f3a32;
 
-  /* Accent - Magenta/Pink (for limited packaging etc.) */
-  --color-accent-50: #fdf2f8;
-  --color-accent-100: #fce7f3;
-  --color-accent-200: #fbcfe8;
-  --color-accent-300: #f9a8d4;
-  --color-accent-400: #f472b6;
-  --color-accent-500: #ec4899;
-  --color-accent-600: #db2777;
-  --color-accent-700: #be185d;
-  --color-accent-800: #9d174d;
-  --color-accent-900: #831843;
+  /* Accent - Warm Terracotta/Orange (for CTAs and Highlights) */
+  --color-accent-50: #fff4ed;
+  --color-accent-100: #ffe5d4;
+  --color-accent-200: #fec9a9;
+  --color-accent-300: #fda475;
+  --color-accent-400: #fb783d;
+  --color-accent-500: #f6581c;
+  --color-accent-600: #e7400d;
+  --color-accent-700: #c02f0d;
+  --color-accent-800: #9a2713;
+  --color-accent-900: #7c2213;
 
   /* Neutral */
   --color-neutral-50: #fbfaf9;
@@ -47,10 +47,10 @@
   --color-info: #3b82f6;
 
   /* Background */
-  --color-background: #F9EAE6;
-  /* Peach Beige */
-  --color-foreground: #191717;
-  /* Dark Charcoal */
+  --color-background: #F8F6F0;
+  /* Warm Beige/Off-white */
+  --color-foreground: #222222;
+  /* Soft Black/Dark Charcoal */
 
   /* Fonts */
   --font-sans: var(--font-inter), system-ui, sans-serif;
@@ -64,15 +64,16 @@
   --radius-2xl: 1.5rem;
   --radius-full: 9999px;
 
-  /* Shadows (Neo-Brutalism Solid Shadows) */
-  --shadow-sm: 2px 2px 0px 0px var(--color-foreground);
-  --shadow-md: 4px 4px 0px 0px var(--color-foreground);
-  --shadow-lg: 6px 6px 0px 0px var(--color-foreground);
-  --shadow-xl: 8px 8px 0px 0px var(--color-foreground);
+  /* Shadows (Elegant & Soft) */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.1);
 
   /* Borders */
-  --border-width-DEFAULT: 2px;
-  --color-border: var(--color-foreground);
+  --border-width-DEFAULT: 1px;
+  --color-border: #E5E0D8;
 
   /* Animation */
   --animate-fade-in: fade-in 0.3s ease-out;
@@ -160,9 +161,8 @@ h4,
 h5,
 h6 {
   font-family: var(--font-serif);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  /* Chunky block look */
+  font-weight: 500;
+  /* Elegant font weight */
 }
 
 /* Focus styles for accessibility */

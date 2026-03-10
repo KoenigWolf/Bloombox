@@ -8,8 +8,6 @@ import { cn } from '@/lib/utils/cn';
 import { Button } from '@/components/ui/button';
 import { Container } from './container';
 import { LanguageSwitcher } from './language-switcher';
-import { Marquee } from '@/components/ui/marquee';
-
 export function Header() {
   const t = useTranslations('nav');
   const pathname = usePathname();
@@ -23,8 +21,10 @@ export function Header() {
 
   return (
     <div className="flex flex-col sticky top-0 z-50">
-      <Marquee>KICK THE WINTER BLUES WITH THE COFFEE SEND ☕ CONSIDER IT SENT. 📦</Marquee>
-      <header className="border-b-2 border-foreground bg-white/95 backdrop-blur">
+      <div className="bg-primary-600 text-white text-xs font-medium py-2 text-center tracking-wide">
+        Free Shipping on all orders over ¥10,000 🌿
+      </div>
+      <header className="border-b border-border bg-white/95 backdrop-blur">
         <Container>
           <div className="flex h-16 items-center justify-between">
             {/* Logo */}
@@ -42,10 +42,10 @@ export function Header() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    'text-sm font-bold uppercase tracking-[0.05em] transition-colors hover:text-primary-600',
+                    'text-sm font-medium transition-colors hover:text-primary-600',
                     pathname === item.href
                       ? 'text-primary-600'
-                      : 'text-neutral-900'
+                      : 'text-neutral-600'
                   )}
                 >
                   {item.label}

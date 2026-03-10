@@ -56,9 +56,9 @@ export default function CheckoutPage() {
     return (
       <section className="py-12">
         <Container>
-          <Card className="p-12 text-center border-4 border-foreground shadow-[8px_8px_0px_var(--color-foreground)]">
-            <h2 className="text-3xl font-serif font-bold mb-4">カートが空です 🛒</h2>
-            <p className="text-foreground/70 mb-6 font-medium">お探しの商品を見つけましょう。</p>
+          <Card className="p-12 text-center max-w-2xl mx-auto shadow-md">
+            <h2 className="text-3xl font-serif font-medium mb-4">カートが空です 🛒</h2>
+            <p className="text-neutral-600 mb-8">お探しの商品を見つけましょう。</p>
             <Button size="lg" onClick={() => router.push('/products')}>
               商品を探す
             </Button>
@@ -71,31 +71,31 @@ export default function CheckoutPage() {
   return (
     <section className="py-12">
       <Container>
-        <h1 className="text-5xl font-serif font-bold mb-8 text-foreground uppercase tracking-tight">{t('title')}</h1>
+        <h1 className="text-4xl md:text-5xl font-serif font-medium mb-8 text-foreground tracking-tight">{t('title')}</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* 注文内容 */}
           <div className="lg:col-span-2">
-            <Card className="p-6 border-2 border-foreground">
-              <h2 className="text-2xl font-serif font-bold mb-4 uppercase">{t('order_summary')}</h2>
-              <div className="divide-y-2 divide-foreground">
+            <Card className="p-6">
+              <h2 className="text-2xl font-serif font-medium mb-4">{t('order_summary')}</h2>
+              <div className="divide-y divide-border">
                 {items.map((item) => (
                   <div
                     key={`${item.productId}-${item.variantId}`}
-                    className="py-3 flex justify-between"
+                    className="py-4 flex justify-between items-center"
                   >
                     <div>
-                      <p className="font-medium">{item.name}</p>
+                      <p className="font-serif font-medium text-lg">{item.name}</p>
                       {item.variantName && (
-                        <p className="text-sm font-bold uppercase tracking-wider text-foreground/70">
+                        <p className="text-sm font-medium text-neutral-600 mt-0.5">
                           {item.variantName}
                         </p>
                       )}
-                      <p className="text-sm font-bold tracking-wider text-foreground/70">
+                      <p className="text-sm font-medium text-neutral-500 mt-1">
                         数量: {item.quantity}
                       </p>
                     </div>
-                    <p className="text-lg font-bold text-foreground">
+                    <p className="text-xl font-serif font-medium text-foreground">
                       {formatCurrency(item.price * item.quantity, locale)}
                     </p>
                   </div>
@@ -105,16 +105,16 @@ export default function CheckoutPage() {
 
             {/* ギフトオプション */}
             {giftOptions.isGift && (
-              <Card className="p-6 mt-6 border-2 border-foreground shadow-[4px_4px_0px_var(--color-foreground)]">
-                <h2 className="text-2xl font-serif font-bold mb-4 uppercase">
+              <Card className="p-6 mt-6 bg-primary-50/50 border-primary-100">
+                <h2 className="text-2xl font-serif font-medium mb-4">
                   {t('gift_options.title')} 🎁
                 </h2>
                 {giftOptions.message && (
                   <div className="mb-4">
-                    <p className="text-sm font-bold uppercase tracking-wider text-foreground/70">
+                    <p className="text-sm font-medium text-neutral-600">
                       {t('gift_options.message')}
                     </p>
-                    <p className="mt-2 text-foreground p-3 border-2 border-foreground bg-white italic">{giftOptions.message}</p>
+                    <p className="mt-2 text-foreground p-4 bg-white rounded-lg border border-border italic text-sm leading-relaxed">{giftOptions.message}</p>
                   </div>
                 )}
               </Card>
@@ -123,25 +123,25 @@ export default function CheckoutPage() {
 
           {/* 支払い */}
           <div>
-            <Card className="p-6 sticky top-32 border-2 border-foreground shadow-[4px_4px_0px_var(--color-foreground)] bg-white">
-              <h2 className="text-2xl font-serif font-bold mb-4 uppercase">{t('payment')}</h2>
-              <div className="space-y-3 border-b-2 border-foreground pb-4 mb-4">
+            <Card className="p-6 sticky top-32 shadow-md">
+              <h2 className="text-2xl font-serif font-medium mb-4">{t('payment')}</h2>
+              <div className="space-y-3 border-b border-border pb-4 mb-4">
                 <div className="flex justify-between text-sm">
-                  <span className="font-bold uppercase tracking-wider">小計</span>
-                  <span className="font-bold">{formatCurrency(subtotal, locale)}</span>
+                  <span className="font-medium text-neutral-600">小計</span>
+                  <span className="font-medium">{formatCurrency(subtotal, locale)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="font-bold uppercase tracking-wider">送料</span>
-                  <span className="font-bold">無料</span>
+                  <span className="font-medium text-neutral-600">送料</span>
+                  <span className="font-medium text-primary-600">無料</span>
                 </div>
               </div>
-              <div className="flex justify-between text-xl font-bold mb-6 uppercase">
+              <div className="flex justify-between text-xl font-serif font-medium mb-8">
                 <span>合計</span>
                 <span>{formatCurrency(subtotal, locale)}</span>
               </div>
 
               {error && (
-                <div className="bg-[#EA5B3B]/10 border-2 border-[#EA5B3B] p-3 mb-4 text-[#EA5B3B] font-bold text-sm">
+                <div className="bg-error/10 border border-error/20 rounded-md p-3 mb-6 text-error font-medium text-sm">
                   {error}
                 </div>
               )}

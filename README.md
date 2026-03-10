@@ -5,6 +5,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss)](https://tailwindcss.com/)
 [![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3FCF8E?logo=supabase)](https://supabase.com/)
+[![Vitest](https://img.shields.io/badge/Vitest-3-6E9F18?logo=vitest)](https://vitest.dev/)
+[![Playwright](https://img.shields.io/badge/Playwright-E2E-2EAD33?logo=playwright)](https://playwright.dev/)
 
 **サステナビリティを重視したプレミアムフラワーデリバリープラットフォーム**
 
@@ -44,6 +46,8 @@
 | Images | Cloudinary |
 | i18n | next-intl |
 | State | Zustand |
+| Testing | Vitest, React Testing Library, Playwright |
+| CI/CD | GitHub Actions |
 
 ## Getting Started
 
@@ -99,9 +103,12 @@ npm run dev
 
 ```
 Bloombox/
+├── .github/
+│   └── workflows/          # GitHub Actions CI/CD
 ├── docs/                    # Documentation
 │   ├── specs/              # Project specifications
 │   └── guides/             # Development guides
+├── e2e/                     # Playwright E2E tests
 ├── supabase/               # Database configuration
 │   ├── migrations/         # SQL migrations
 │   └── seed.sql           # Seed data
@@ -110,7 +117,8 @@ Bloombox/
     │   ├── [locale]/       # Localized routes
     │   │   ├── (shop)/    # Public shop pages
     │   │   ├── (auth)/    # Auth pages
-    │   │   └── (account)/ # Protected pages
+    │   │   ├── (account)/ # Protected pages
+    │   │   └── (content)/ # Content pages (About, Story)
     │   └── api/           # API routes
     ├── components/         # Shared components
     │   ├── ui/            # Primitives (Button, Card, Input)
@@ -129,11 +137,12 @@ Bloombox/
     │   ├── cloudinary/    # Image optimization
     │   ├── resend/        # Email delivery
     │   └── line/          # LINE Messaging
+    ├── test/              # Test utilities & mocks
     ├── config/            # App configuration
     ├── hooks/             # Shared React hooks
     ├── types/             # Shared TypeScript types
     ├── i18n/              # i18n configuration
-    └── messages/          # Translation files
+    └── messages/          # Translation files (ja, en, zh, vi)
 ```
 
 ## Scripts
@@ -145,6 +154,11 @@ Bloombox/
 | `npm run start` | Start production server |
 | `npm run lint` | Run ESLint |
 | `npm run type-check` | Run TypeScript type checking |
+| `npm run test` | Run unit tests in watch mode |
+| `npm run test:run` | Run unit tests once |
+| `npm run test:coverage` | Run tests with coverage report |
+| `npm run test:e2e` | Run E2E tests with Playwright |
+| `npm run check-all` | Run lint, type-check, test, and build |
 
 ## Environment Variables
 
@@ -161,6 +175,52 @@ Bloombox/
 | `LINE_CHANNEL_SECRET` | LINE channel secret |
 
 See [.env.example](./.env.example) for the complete list.
+
+## Testing
+
+### Unit Tests (Vitest + React Testing Library)
+
+```bash
+# Run in watch mode
+npm run test
+
+# Run once
+npm run test:run
+
+# With coverage
+npm run test:coverage
+```
+
+テスト対象:
+- `lib/utils/` - ユーティリティ関数
+- `features/*/` - ストア、フック、型定義
+- `components/ui/` - UIコンポーネント
+
+### E2E Tests (Playwright)
+
+```bash
+# Run all E2E tests
+npm run test:e2e
+
+# Run with UI
+npm run test:e2e:ui
+```
+
+テスト対象:
+- ホームページナビゲーション
+- 商品一覧・詳細
+- カート機能
+- チェックアウトフロー
+- アクセシビリティ
+
+### CI/CD
+
+GitHub Actionsで以下を自動実行:
+1. **Lint** - ESLint
+2. **Type Check** - TypeScript
+3. **Unit Tests** - Vitest
+4. **Build** - Next.js
+5. **E2E Tests** - Playwright (Chrome)
 
 ## Documentation
 

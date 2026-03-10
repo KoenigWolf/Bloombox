@@ -19,7 +19,7 @@ export default function CartPage() {
   return (
     <section className="py-12">
       <Container>
-        <h1 className="text-5xl font-serif font-bold mb-8 text-foreground uppercase tracking-tight">{t('title')}</h1>
+        <h1 className="text-4xl md:text-5xl font-serif font-medium mb-8 text-foreground tracking-tight">{t('title')}</h1>
 
         {isEmpty ? (
           <Card className="p-12 text-center">
@@ -32,14 +32,14 @@ export default function CartPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Cart Items */}
             <div className="lg:col-span-2">
-              <Card className="divide-y-2 divide-foreground">
+              <Card className="divide-y divide-border">
                 {items.map((item) => (
                   <div
                     key={`${item.productId}-${item.variantId}`}
                     className="flex gap-4 p-4"
                   >
                     {/* Image */}
-                    <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden border-2 border-foreground bg-[#F9EAE6]">
+                    <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-lg border border-border bg-white shadow-sm">
                       {item.imageUrl ? (
                         <Image
                           src={item.imageUrl}
@@ -59,16 +59,16 @@ export default function CartPage() {
                     <div className="flex-1 min-w-0">
                       <Link
                         href={`/products/${item.slug}`}
-                        className="text-xl font-bold hover:text-primary-DEFAULT transition-colors"
+                        className="text-xl font-serif font-medium hover:text-primary-600 transition-colors"
                       >
                         {item.name}
                       </Link>
                       {item.variantName && (
-                        <p className="text-sm font-bold uppercase tracking-wider text-foreground/70 mt-0.5">
+                        <p className="text-sm font-medium text-neutral-600 mt-0.5">
                           {item.variantName}
                         </p>
                       )}
-                      <p className="text-lg font-bold text-foreground mt-2">
+                      <p className="text-xl font-serif font-medium text-foreground mt-2">
                         {formatCurrency(item.price * item.quantity, locale)}
                       </p>
                     </div>
@@ -79,11 +79,11 @@ export default function CartPage() {
                         onClick={() =>
                           removeItem(item.productId, item.variantId)
                         }
-                        className="text-foreground/50 hover:text-primary-DEFAULT transition-colors"
+                        className="text-neutral-400 hover:text-error transition-colors"
                       >
-                        <Trash2 className="h-5 w-5" />
+                        <Trash2 className="h-4 w-4" />
                       </button>
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1 mt-auto">
                         <button
                           onClick={() =>
                             updateQuantity(
@@ -92,11 +92,11 @@ export default function CartPage() {
                               item.quantity - 1
                             )
                           }
-                          className="p-2 border-2 border-foreground bg-white hover:bg-primary-DEFAULT hover:text-white transition-colors"
+                          className="p-1.5 rounded-md border border-border bg-white hover:border-primary-600 hover:text-primary-600 transition-colors"
                         >
-                          <Minus className="h-4 w-4" />
+                          <Minus className="h-3 w-3" />
                         </button>
-                        <span className="text-sm w-8 text-center font-bold">
+                        <span className="text-sm w-8 text-center font-medium">
                           {item.quantity}
                         </span>
                         <button
@@ -107,9 +107,9 @@ export default function CartPage() {
                               item.quantity + 1
                             )
                           }
-                          className="p-2 rounded border border-neutral-300 hover:bg-neutral-50"
+                          className="p-1.5 rounded-md border border-border bg-white hover:border-primary-600 hover:text-primary-600 transition-colors"
                         >
-                          <Plus className="h-4 w-4" />
+                          <Plus className="h-3 w-3" />
                         </button>
                       </div>
                     </div>
@@ -121,18 +121,18 @@ export default function CartPage() {
             {/* Order Summary */}
             <div>
               <Card className="p-6 sticky top-32">
-                <h2 className="text-2xl font-serif font-bold mb-4 uppercase">注文概要</h2>
-                <div className="space-y-3 border-b-2 border-foreground pb-4 mb-4">
+                <h2 className="text-2xl font-serif font-medium mb-4">ご注文内容</h2>
+                <div className="space-y-3 border-b border-border pb-4 mb-4">
                   <div className="flex justify-between text-sm">
-                    <span className="font-bold uppercase tracking-wider">{t('subtotal')}</span>
-                    <span className="font-bold">{formatCurrency(subtotal, locale)}</span>
+                    <span className="font-medium text-neutral-600">{t('subtotal')}</span>
+                    <span className="font-medium">{formatCurrency(subtotal, locale)}</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span className="font-bold uppercase tracking-wider">{t('shipping')}</span>
-                    <span className="font-bold">計算中...</span>
+                    <span className="font-medium text-neutral-600">{t('shipping')}</span>
+                    <span className="font-medium text-primary-600">計算中...</span>
                   </div>
                 </div>
-                <div className="flex justify-between text-xl font-bold mb-6 uppercase">
+                <div className="flex justify-between text-xl font-serif font-medium mb-6">
                   <span>{t('total')}</span>
                   <span>{formatCurrency(subtotal, locale)}</span>
                 </div>

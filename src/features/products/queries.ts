@@ -10,7 +10,7 @@ const mockProducts: Product[] = [
     images: [
       {
         id: 'img1',
-        url: 'products/spring-bouquet',
+        url: '/images/products/spring-bouquet.jpg',
         alt: '春のブーケ',
         isPrimary: true,
       },
@@ -98,7 +98,7 @@ const mockProducts: Product[] = [
     images: [
       {
         id: 'img2',
-        url: 'products/rose-arrangement',
+        url: '/images/products/rose-arrangement.jpg',
         alt: 'ローズアレンジメント',
         isPrimary: true,
       },
@@ -167,7 +167,7 @@ const mockProducts: Product[] = [
     images: [
       {
         id: 'img3',
-        url: 'products/sunflower-joy',
+        url: '/images/products/sunflower-joy.jpg',
         alt: 'ひまわりの喜び',
         isPrimary: true,
       },

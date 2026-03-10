@@ -50,18 +50,17 @@ export default async function ProductsPage({
   return (
     <section className="py-16 bg-background min-h-screen">
       <Container>
-        <div className="mb-12 border-b-4 border-foreground pb-6">
-          <h1 className="text-5xl md:text-7xl font-black font-serif uppercase tracking-tighter">{t('title')}</h1>
+        <div className="mb-12 border-b border-border pb-6">
+          <h1 className="text-4xl md:text-5xl font-serif tracking-tight text-foreground">{t('title')}</h1>
         </div>
 
-        {/* フィルター・ソート UI（後で拡張） */}
-        <div className="mb-10 flex flex-wrap gap-4 items-center justify-between bg-white border-2 border-foreground p-6 shadow-[6px_6px_0px_var(--color-foreground)] rounded-sm">
+        {/* フィルター・ソート UI */}
+        <div className="mb-10 flex flex-wrap gap-4 items-center justify-between bg-white border border-border p-4 shadow-sm rounded-xl">
           <div className="flex gap-2">
-            {/* カテゴリフィルターボタン（後で実装） */}
-            <span className="font-bold uppercase tracking-widest text-primary-500">Filters 🔍</span>
+            <span className="font-medium tracking-wide text-primary-600">Filters</span>
           </div>
           <div className="flex gap-4 items-center">
-            <span className="text-sm font-bold uppercase tracking-widest text-neutral-900">{t('sort.title')}:</span>
+            <span className="text-sm font-medium tracking-wide text-neutral-600">{t('sort.title')}:</span>
             <SortSelect currentSort={sort} />
           </div>
         </div>

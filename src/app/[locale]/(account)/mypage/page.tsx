@@ -11,13 +11,13 @@ export default async function MyPage() {
 
   return (
     <Container className="py-8">
-      <h1 className="text-5xl font-serif font-bold mb-8 text-foreground uppercase tracking-tight">{t('title')}</h1>
+      <h1 className="text-4xl md:text-5xl font-serif font-medium mb-8 text-foreground tracking-tight">{t('title')}</h1>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/* Profile Card */}
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl font-serif font-bold uppercase">{t('profile')}</CardTitle>
+            <CardTitle className="text-xl font-serif font-medium">{t('profile')}</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-2">
@@ -42,7 +42,7 @@ export default async function MyPage() {
         {/* Flower Miles Card */}
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl font-serif font-bold uppercase">{t('flower_miles')}</CardTitle>
+            <CardTitle className="text-xl font-serif font-medium">{t('flower_miles')}</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-3xl font-bold text-primary">
@@ -58,7 +58,7 @@ export default async function MyPage() {
         {/* Order History Card */}
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl font-serif font-bold uppercase">{t('order_history')}</CardTitle>
+            <CardTitle className="text-xl font-serif font-medium">{t('order_history')}</CardTitle>
           </CardHeader>
           <CardContent>
             <Link
@@ -73,7 +73,7 @@ export default async function MyPage() {
         {/* Saved Addresses Card */}
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl font-serif font-bold uppercase">{t('saved_addresses')}</CardTitle>
+            <CardTitle className="text-xl font-serif font-medium">{t('saved_addresses')}</CardTitle>
           </CardHeader>
           <CardContent>
             <Link
@@ -88,7 +88,7 @@ export default async function MyPage() {
         {/* Important Dates Card */}
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl font-serif font-bold uppercase">{t('important_dates')}</CardTitle>
+            <CardTitle className="text-xl font-serif font-medium">{t('important_dates')}</CardTitle>
           </CardHeader>
           <CardContent>
             <Link

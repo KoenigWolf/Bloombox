@@ -28,6 +28,15 @@ export default function cloudinaryLoader({
     return `${CLOUDINARY_BASE}/${params}/fetch/${encodedUrl}`;
   }
 
+  // 開発環境で、かつローカルパス（/から始まる）場合はそのまま返す
+  if (process.env.NODE_ENV === 'development' && src.startsWith('/')) {
+    return src;
+  }
+  if (src.startsWith('http://') || src.startsWith('https://')) {
+    const encodedUrl = encodeURIComponent(src);
+    return `${CLOUDINARY_BASE}/${params}/fetch/${encodedUrl}`;
+  }
+
   // srcがCloudinaryのpublic_idの場合
   return `${CLOUDINARY_BASE}/${params}/${src}`;
 }
