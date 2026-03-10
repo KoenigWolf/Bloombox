@@ -305,6 +305,23 @@ bloombox/
 * **React Server Components (RSC) のデフォルト化:** データフェッチは原則としてサーバー側（`page.tsx` 等）で行い、クライアントへのJSバンドルサイズを最小化する。状態を持つUI（カート等）のみ `"use client"` ディレクティブを使用して分離。
 * **Server Actionsの配置:** 各フィーチャーディレクトリ内に `actions.ts` を配置し、フォーム送信やデータ更新のロジックをカプセル化する。
 
+### 5.1 レイアウト構造（next-intl対応）
+
+国際化対応のため、レイアウト構造は以下のパターンを採用:
+
+```
+src/app/layout.tsx           → children のみを返す（html/body なし）
+                               metadata 定義、globals.css インポート
+src/app/[locale]/layout.tsx  → <html lang={locale}><body> を定義
+                               フォント、NextIntlClientProvider、Header/Footer
+```
+
+**この設計の理由:**
+
+1. **動的lang属性**: `<html lang={locale}>` により、各ロケール（ja/en/zh/vi）に応じた正しいlang属性が設定される。Root layoutでハードコードすると、全ページで`lang="en"`になりSEO・アクセシビリティに悪影響。
+2. **ハイドレーションエラー回避**: 両方のlayoutで`<html>`を定義するとReactハイドレーションエラーが発生。locale layoutのみで定義することで回避。
+3. **next-intl公式パターン**: next-intl App Router統合の推奨構成に準拠。
+
 ## 6. 月額コスト見積もり
 
 （※変更なし。Vercel Pro $20, Supabase Free〜Pro等を前提とした低コスト運用）
